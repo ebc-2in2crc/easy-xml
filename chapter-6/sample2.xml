@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<book>
+	<chapter>
+		<title>章見出し</title>
+		<section>
+			<title>節見出し</title>
+			<subsection>
+				<title>項見出し</title>
+			</subsection>
+			<subsection>
+				<title>項見出し</title>
+			</subsection>
+		</section>
+		<section>
+			<title>節見出し</title>
+		</section>
+	</chapter>
+	<chapter>
+		<title>章見出し</title>
+		<section>
+			<title>節見出し</title>
+			<subsection>
+				<title>項見出し</title>
+			</subsection>
+			<subsection>
+				<title>項見出し</title>
+			</subsection>
+		</section>
+		<section>
+			<title>節見出し</title>
+		</section>
+	</chapter>
+</book>
