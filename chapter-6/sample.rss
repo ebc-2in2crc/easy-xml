@@ -1,0 +1,1110 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>たごもりすメモ</title>
+    <link>http://tagomoris.hatenablog.com/</link>
+    <description>コードとかその他の話とか。</description>
+    <lastBuildDate>Mon, 01 Aug 2016 12:06:56 +0900</lastBuildDate>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <generator>Hatena::Blog</generator>
+    
+      
+      
+        <item>
+          <title>松江市でOSSの話をした &amp; Fluentd meetup をやった</title>
+          <link>http://tagomoris.hatenablog.com/entry/2016/08/01/120656</link>          <description>&lt;p&gt;なんか最近プレゼンテーションやった話しかエントリに書いていない……。。。&lt;/p&gt;&lt;p&gt;それはともかく、しまね&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;協議会というところから周年記念講演で話さないかというお誘いがありまして、お受けしたので&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C5%E7%BA%AC%B8%A9&quot;&gt;島根県&lt;/a&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%BE%BE%B9%BE%BB%D4&quot;&gt;松江市&lt;/a&gt;で話してきた。せっかく&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt; City Matsueに行くことだしついでにイベントやってこようということで Fluentd meetup in Matsue もやることになり、そんなわけでふたつ発表してきた。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;第106回&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%AA%A1%BC%A5%D7%A5%F3%A5%BD%A1%BC%A5%B9&quot;&gt;オープンソース&lt;/a&gt;サロン・総会記念講演&lt;/h4&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.shimane-oss.org/events/2016/06/14/salon-106/&quot;&gt;&amp;#x7B2C;106&amp;#x56DE;&amp;#x30AA;&amp;#x30FC;&amp;#x30D7;&amp;#x30F3;&amp;#x30BD;&amp;#x30FC;&amp;#x30B9;&amp;#x30B5;&amp;#x30ED;&amp;#x30F3;&amp;#x30FB;&amp;#x7DCF;&amp;#x4F1A;&amp;#x8A18;&amp;#x5FF5;&amp;#x8B1B;&amp;#x6F14; | &amp;#x3057;&amp;#x307E;&amp;#x306D;OSS&amp;#x5354;&amp;#x8B70;&amp;#x4F1A; OS4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;しまね&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;協議会ということで、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%AA%A1%BC%A5%D7%A5%F3%A5%BD%A1%BC%A5%B9&quot;&gt;オープンソース&lt;/a&gt;ソフトウェアの話。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/ELkICIsnEBMGiz&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/open-source-software-distributed-systems-database-as-a-cloud-service&quot; title=&quot;Open Source Software, Distributed Systems, Database as a Cloud Service&quot; target=&quot;_blank&quot;&gt;Open Source Software, Distributed Systems, Database as a Cloud Service&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;というか、トレジャーデータという会社が&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;を使い倒してビジネスをやってるのは何故なのか、それは内外の開発者にとってはどういう意味があってどう見えているのか、みたいなことを中心に話していた。具体例についてはどっちかというと&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;よりは&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Java&quot;&gt;Java&lt;/a&gt;(というかデータ処理&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%DF%A5%C9%A5%EB%A5%A6%A5%A7%A5%A2&quot;&gt;ミドルウェア&lt;/a&gt;界隈)の話に寄ったけど、一般化できる内容ではあったと思う。&lt;/p&gt;&lt;p&gt;自社サービスの話、USとJPをまたいだ話(採用とか)、業務として&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;のパッチを書く話など、あれやこれや話してた。質問もいろいろ頂いて、話しに行けてよかった。お呼びいただきありがとうございました。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;Fluentd meetup in Matsue&lt;/h4&gt;
+    &lt;p&gt;&lt;a href=&quot;http://eventdots.jp/event/591027&quot;&gt;Fluentd meetup in Matsue - dots. [&amp;#x30C9;&amp;#x30C3;&amp;#x30C4;]&lt;/a&gt;&lt;/p&gt;&lt;p&gt;せっかくなので開催してきた。東京以外でのFluentd meetupは福岡、San Franciscoに続いてのなんと3ヶ所目。とりあえず自分からはFluentdそのものの導入やら最近の&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%E6%A1%BC%A5%B9%A5%B1%A1%BC%A5%B9&quot;&gt;ユースケース&lt;/a&gt;やらアップデートやらをざーっと話すという感じにしてみた。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/nAiRnVOJtmOdTw&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/fluentd-overview-now-and-then&quot; title=&quot;Fluentd Overview, Now and Then&quot; target=&quot;_blank&quot;&gt;Fluentd Overview, Now and Then&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;Fluentdを使ったことがない人もいたので、これはこれでとりあず必要な内容というか。こういう総論的なFluentdの紹介スライドはどっちにしろ定期的にアップデートする必要があって、ちょうどいい機会でもあった。&lt;br /&gt;
+他の発表も募集したところちゃんと話してくれる人が出てきてくれたので本当によかった。しかも素晴らしい内容だった。&lt;/p&gt;&lt;p&gt;&lt;script async class=&quot;speakerdeck-embed&quot; data-id=&quot;2daf8894461845188b7f61b7316dd2da&quot; data-ratio=&quot;1.33333333333333&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/f1BYFsIGqJArp&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/cosmo0920/20160730-fluentd-meetup-in-matsue-slide&quot; title=&quot;20160730 fluentd meetup in matsue slide&quot; target=&quot;_blank&quot;&gt;20160730 fluentd meetup in matsue slide&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/cosmo0920&quot; target=&quot;_blank&quot;&gt;cosmo0920&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;あとFluentdの新ロゴが載ってるノベルティが配られた初のFluentd meetupでもありました。よかったよかった。&lt;/p&gt;&lt;p&gt;&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;ja&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Fluentd meetup in Matue &lt;a href=&quot;https://twitter.com/hashtag/fluentdmeetup?src=hash&quot;&gt;#fluentdmeetup&lt;/a&gt; &lt;a href=&quot;https://t.co/jMWBqwcwj7&quot;&gt;pic.twitter.com/jMWBqwcwj7&lt;/a&gt;&lt;/p&gt;&amp;mdash; tagomoris (@tagomoris) &lt;a href=&quot;https://twitter.com/tagomoris/status/759235428193034241&quot;&gt;2016年7月30日&lt;/a&gt;&lt;/blockquote&gt;&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;/div&gt;</description>          <pubDate>Mon, 01 Aug 2016 12:06:56 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/10328749687177004361</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>Stream Processing Casual Talks #1 に行ってきた＆しゃべってきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2016/07/25/115743</link>          <description>&lt;p&gt;なんか、やろうぜー、という話になってそのような勉強会が行われたので、参加してた。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2Fconnpass.com%2Fevent%2F35264%2F&quot; title=&quot;Stream Processing Casual Talks #1 at Yahoo! JAPAN (2016/07/22 18:30〜)&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://connpass.com/event/35264/&quot;&gt;connpass.com&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;会場＆飲食の提供は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Yahoo%21%20Japan&quot;&gt;Yahoo! Japan&lt;/a&gt;さん。ありがとうございました。面白かった。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;しゃべってきた&lt;/h4&gt;
+    &lt;p&gt;Norikraそのものの話はさすがに今更感あったので、Norikraの大事なところと、あとPerfect Norikra (仮)について話してきた。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/kJ1ATYK2GlvYN8&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/how-to-make-norikra-perfect&quot; title=&quot;How to Make Norikra Perfect&quot; target=&quot;_blank&quot;&gt;How to Make Norikra Perfect&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;まあ、まだ1byteも存在しないソフトウェアなんだけどな！ 存在しないソフトウェアについて話せるようになったの、ちょっと実績解除感があるのではないだろうか。だめか。&lt;/p&gt;&lt;p&gt;Norikraを分散処理対応にするにはクエリ処理エンジンおよびデータ転送層を丸ごと書き直すしかないなー、しかもそこに色々なア&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A4%A5%C7%A5%A2&quot;&gt;イデア&lt;/a&gt;が必要だなとは思っていて、そのうちのひとつであるところの動的スケールアウトには最低限何が必要なのか、みたいな話をしてた。&lt;br /&gt;
+この他にもまだあれこれ必要なんだけど、この先はどんどん話の前提が増えていくから、さすがに勉強会の単発の発表でやるのはキツそう。というか、書かないとなあ……。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;行ってきた&lt;/h4&gt;
+    &lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Hadoop&quot;&gt;Hadoop&lt;/a&gt; Summit での空気感&lt;a href=&quot;#f-c4c2da96&quot; name=&quot;fn-c4c2da96&quot; title=&quot;やっぱり各ベンダーの人の話はその意向が出るよなあ、という強烈な印象だけがある……&quot;&gt;*1&lt;/a&gt;とか、Y!Jでの実際のアプリケーションの話とか、その他各&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%DF%A5%C9%A5%EB%A5%A6%A5%A7%A5%A2&quot;&gt;ミドルウェア&lt;/a&gt;の話とか聞いてた。たのしかったー。&lt;/p&gt;&lt;p&gt;特にPipeline DBの話がじつに面白かった。Norikraと完全に逆の方向を向いてて、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/RDBMS&quot;&gt;RDBMS&lt;/a&gt;の外側にハックをかぶせていかにストリーム処理をストリーム処理に見せないか、という方向に突っ走ってた。なるほどなあ、それなら&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/JDBC&quot;&gt;JDBC&lt;/a&gt;使えるわー。でも自分はそっちの方向には絶対行かないなあ。&lt;/p&gt;&lt;p&gt;そのあとも飲みながらあれこれ話したりとか、じつに面白い勉強会でした。またやりたいですね。&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-c4c2da96&quot; name=&quot;f-c4c2da96&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;やっぱり各ベンダーの人の話はその意向が出るよなあ、という強烈な印象だけがある……&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Mon, 25 Jul 2016 11:57:43 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/10328749687175984922</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>LinuxCon Japan 2016に行ってきた＆しゃべってきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2016/07/20/155215</link>          <description>&lt;p&gt;LinuxCon Japan、今回は ContainerCon Japanとの併催。サブトラックみたいなのもいくつかあった。&lt;br /&gt;
+とにかく普段に自分が行くカンファレンスとぜんぜん空気が違ってて、東京都内で行われてるカンファレンスなのに会場の感じとか食事・飲み物の提供とか冷房のキツさとか、あれこれがだいぶ海外のカンファレンスっぽい。参加費が高いからできることなんだろうけど。そして海外からと思しき参加者も非常に多かった。すごいな。&lt;br /&gt;
+日本国内からも大手メーカー系のスポンサードと参加者が非常に多かった。普段見ないあたりの世界だなあ。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;しゃべってきた&lt;/h4&gt;
+    &lt;p&gt;プロポーザルを出してみたら通ったので初めての参加＆発表だった。行ったことないので全体的にどういう空気なのかも分からないまま、初日のキーノート後の通常の発表枠の中で最初に時間だった。お、おう……。&lt;/p&gt;&lt;p&gt;今回はロギングに関しての&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A2%A1%BC%A5%AD%A5%C6%A5%AF%A5%C1%A5%E3&quot;&gt;アーキテクチャ&lt;/a&gt;を議論するよ、ということで、特にコンテナを使うのが当たりまえという世界でロギングってどうやるんだっけ、どうすればちゃんとスケールさせられるんだっけ、という話をあれこれやった。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/kbd3gHEwii4VxJ&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/distributed-logging-architecture-in-container-era&quot; title=&quot;Distributed Logging Architecture in Container Era&quot; target=&quot;_blank&quot;&gt;Distributed Logging Architecture in Container Era&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;実例で特にFluentdを取り上げているけど、話の内容自体は一般論として何でもやれるはず。アプリケーション側をできるだけ単純にしつつ、ログの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C8%A5%E9%A5%D5%A5%A3%A5%C3%A5%AF&quot;&gt;トラフィック&lt;/a&gt;の増大にどう対応するか、ログの種類の増大にどう対応するか、ストレージの性能特性によってどのように構成を考える必要があるか、などなど。&lt;br /&gt;
+ちょっと英語でのスピーチがうまくやれなかったなと思ってたけど、聴衆から参考になったって感想言いにきてくれた人がいたので良かった。ありがたいことです。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;そのほか&lt;/h4&gt;
+    &lt;p&gt;最近 Treasure Data が &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Linux&quot;&gt;Linux&lt;/a&gt; Foundation のプロジェクトのひとつであるCNCFに参加したということもあって、LinuxConの分科会のひとつとしてCNCFのトラックもあって、そっちでは @repeatedly がFluentdの話をしていた。これはこれで、普段リーチしてない層に届いたのかなあ、という感じ。&lt;br /&gt;
+あとはふらふらと各セッションを巡ってたんだけど、面白いのもあればなんだこりゃ、というのもあった。総じて、うーん、もうちょっとこう……まあカンファレンスごとのノリもあるしね、難しいよね、みたいな感じはする。&lt;/p&gt;&lt;p&gt;そして期間中ひたすら強烈な冷房を浴びつづけたせいか、しまいには盛大に体調を崩してしまった。きびしい。&lt;/p&gt;
+
+&lt;/div&gt;</description>          <pubDate>Wed, 20 Jul 2016 15:52:15 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653812171406485678</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>YAPC::Asia Hachiojiに行ってきた＆しゃべってきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2016/07/04/101738</link>          <description>&lt;p&gt;この週末に開催されていた &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;::Asia Hachioji に参加してきた。2日目は体調崩してダウンしてたので1日目だけだったのが残念だけど、楽しかったー。&lt;br /&gt;
+&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2Fyapcasia8oji-2016mid.hachiojipm.org%2F&quot; title=&quot;YAP(achimon)C::Asia Hachioji 2016 mid in Shinagawa. 2016/7/2(sat),3(sun)&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://yapcasia8oji-2016mid.hachiojipm.org/&quot;&gt;yapcasia8oji-2016mid.hachiojipm.org&lt;/a&gt;&lt;/cite&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;しゃべってきた&lt;/h4&gt;
+    &lt;p&gt;普段あんまり&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%A5%C6%A5%AF%A5%CB%A5%C3%A5%AF&quot;&gt;プログラミングテクニック&lt;/a&gt;そのものについてはプレゼンをやる機会がないんだけど、Fluentd v0.14で使わざるをえなかったあれこれとか一度しゃべっとくかということで出してたので、やった。主に黒魔術について。なんだろう、使っても許される黒魔術の用途と実践、みたいな感じ?&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/oXDsFji23OHyJ&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/fighting-api-compatibility-on-fluentd-using-black-magic&quot; title=&quot;Fighting API Compatibility On Fluentd Using &amp;quot;Black Magic&amp;quot;&quot; target=&quot;_blank&quot;&gt;Fighting API Compatibility On Fluentd Using &amp;quot;Black Magic&amp;quot;&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;30分という時間&lt;a href=&quot;#f-807184d6&quot; name=&quot;fn-807184d6&quot; title=&quot;もっと長い時間で申請しとけばよかったって超思った&quot;&gt;*1&lt;/a&gt;で何故そういうハックが必要なのかを説明して実装を説明して、ということになって、また大分駆け足になってしまった。が、後で聞いた感想によると前提の説明があったから良かったという話だったので、まあよかったんじゃないかなー。たぶん。&lt;br /&gt;
+最近は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A2%A1%BC%A5%AD%A5%C6%A5%AF%A5%C1%A5%E3&quot;&gt;アーキテクチャ&lt;/a&gt;の話とかもっとエモめの話とかをすることが多かったので、コードそのものの話はやってて楽しかった。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;いってきた&lt;/h4&gt;
+    &lt;p&gt;あんまり多くのセッションを聞いてないけど、みんな自分のやったことについて楽しそうに話してるなー、という感じで、参加してても面白かった。&lt;br /&gt;
+主催のかたがた、たいへんお疲れさまでした！&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-807184d6&quot; name=&quot;f-807184d6&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;もっと長い時間で申請しとけばよかったって超思った&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Mon, 04 Jul 2016 10:17:38 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653812171403871787</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>Fluentd v0.14.0 をリリースした &amp; Fluentd meetup 2016 Summer をやってしゃべってきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2016/06/02/134310</link>          <description>&lt;p&gt;最近めっきり対外的なアウトプットが減っていたのは、ぜんぶこいつのコードを書きまくってたからです。すごい書いた。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.fluentd.org/blog/fluentd-v0.14.0-has-been-released&quot;&gt;Fluentd v0.14.0 has been released | Fluentd&lt;/a&gt;&lt;/p&gt;&lt;p&gt;ということで出ました、Fluentd v0.14.0。だいぶいろいろ良くなってるはずだけど、そのあたりはこれからv0.14対応&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;が増えてきたりすると分かってくるかなと思う。ユーザにとっても嬉しい変更が山盛りです。&lt;br /&gt;
+で、まずそのことをアピールしなければならんということで、Fluentd meetupではがっつりとしゃべってきた。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://eventdots.jp/event/588701&quot;&gt;Fluentd meetup 2016 Summer - dots. [&amp;#x30C9;&amp;#x30C3;&amp;#x30C4;]&lt;/a&gt;&lt;/p&gt;&lt;br /&gt;
+&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/emt1mNHBDYwRHj&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/fluentd-v014-plugin-api-details&quot; title=&quot;Fluentd v0.14 Plugin API Details&quot; target=&quot;_blank&quot;&gt;Fluentd v0.14 Plugin API Details&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;元々45分の予定だったのに90分弱くらいしゃべってしまったらしい。すまんかった。しかし省略できそうな場所が無かった。&lt;/p&gt;&lt;p&gt;これからドキュメントとかいっぱい書くんだけど、他にまだまだ機能を v0.14.x のバージョンで載せていかないとだし、あれこれやるぞー、という気分。ユーザ＆&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;開発者のみなさんからもいっぱいフィードバックいただけると嬉しいですね！&lt;/p&gt;
+</description>          <pubDate>Thu, 02 Jun 2016 13:43:10 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653812171399327456</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>Fluentdの設定ファイルを快適に記述するたったひとつの正しいやりかた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2016/05/10/174743</link>          <description>&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Emacs&quot;&gt;Emacs&lt;/a&gt; で &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/apache&quot;&gt;apache&lt;/a&gt;-mode を使おう！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！&lt;/p&gt;
+</description>          <pubDate>Tue, 10 May 2016 17:47:43 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653812171395352844</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>Travis CI で目当ての言語バージョンとOSの組合せを指定する</title>
+          <link>http://tagomoris.hatenablog.com/entry/2016/04/19/130857</link>          <description>&lt;p&gt;世の中のみんなは今日も頑張って&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;の&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%DF%A5%C9%A5%EB%A5%A6%A5%A7%A5%A2&quot;&gt;ミドルウェア&lt;/a&gt;を書いていることと思いますが、そんな我々に欠かせないのが&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Travis&quot;&gt;Travis&lt;/a&gt; CIというサービスでして、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;ならCI環境を無料で使わせてもらえる! マジで最高のサービスだと思います。日本からだとUSの人達が元気な時間帯とズレてるせいか、pushしたあとビルドが走るのが早くて本当にありがたい。&lt;a href=&quot;#f-cbdf3722&quot; name=&quot;fn-cbdf3722&quot; title=&quot;USのお昼にpushするとマジでビルドが走るまでの時間が違うのが体感できる……気がする&quot;&gt;*1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;で、CIを回すからには対象の言語バージョンといっしょにOSの違いも確認したい。標準の環境の &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Linux&quot;&gt;Linux&lt;/a&gt; (&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ubuntu&quot;&gt;Ubuntu&lt;/a&gt;) 以外に最近ではなんと&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSX&quot;&gt;OSX&lt;/a&gt;環境もあるので、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%DF%A5%C9%A5%EB%A5%A6%A5%A7%A5%A2&quot;&gt;ミドルウェア&lt;/a&gt;プログラミング野郎としてはやっぱり両方で動かしておきたいわけです。言語バージョンももちろんあれやこれや、古いの&lt;a href=&quot;#f-1e833f27&quot; name=&quot;fn-1e833f27&quot; title=&quot;ほどほどに古い、サポート対象にしても構わないもの、という意味&quot;&gt;*2&lt;/a&gt;から新しいのまで色々動かしたい。&lt;/p&gt;&lt;p&gt;しかしそこには問題があって、有限のリソースというものがある以上、野放図に指定はできないわけです。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;普通にバージョンを指定&lt;/h4&gt;
+    &lt;p&gt;単に組合せで指定したい場合は、こう:&lt;/p&gt;
+&lt;pre class=&quot;code lang-yaml&quot; data-lang=&quot;yaml&quot; data-unlink&gt;&lt;span class=&quot;synComment&quot;&gt;# .travis.yml&lt;/span&gt;
+
+&lt;span class=&quot;synIdentifier&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; ruby
+
+&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synConstant&quot;&gt;2.1&lt;/span&gt;
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;2.2.3
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;2.3.0
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;ruby-head
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;rbx
+
+&lt;span class=&quot;synIdentifier&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;linux
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;osx
+&lt;/pre&gt;&lt;p&gt;この設定を与えると &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Travis&quot;&gt;Travis&lt;/a&gt; CI は rvm(&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/ruby&quot;&gt;ruby&lt;/a&gt;のバージョン) と os の組合せを掛け算して、5バージョン 2環境 の10ビルドを実行する。ただしこれは失敗してもいいやというものはあって、例えば &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/ruby&quot;&gt;ruby&lt;/a&gt;-head や rbx ではビルドは動かしておきたい、がコケても失敗とは見做さない&lt;a href=&quot;#f-161e95f2&quot; name=&quot;fn-161e95f2&quot; title=&quot;GitHub上でのpull-requestのCIとかはグリーンつまり成功と表示される&quot;&gt;*3&lt;/a&gt;、とかしたいことがある。この場合は allow_failures というやつでその指定をすることになる。&lt;/p&gt;
+&lt;pre class=&quot;code lang-yaml&quot; data-lang=&quot;yaml&quot; data-unlink&gt;&lt;span class=&quot;synIdentifier&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;synIdentifier&quot;&gt;allow_failures&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; ruby-head
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; rbx
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;ビルド条件をもっと細かく特定して指定&lt;/h4&gt;
+    &lt;p&gt;ただしこれも色々あって、言語バージョンの指定が割とざっくり(&quot;2.1&quot; とか)しているならいいんだけど、細かくバージョンを指定したくなった場合、実はあれこれ制約が出てくる。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt; 2.1といっても2.1.xの最新版で実行したいとなったりすると、まずどのバージョンが&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Travis&quot;&gt;Travis&lt;/a&gt;上で使えるのかを調べる必要がある。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;の場合は以下のページ(言語ごとにあるのでドキュメントページから探そう)。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://rubies.travis-ci.org/&quot;&gt;Travis CI: Precompiled Ruby Versions&lt;/a&gt;&lt;/p&gt;&lt;p&gt;これを見るとわかるのが、各OSのバージョンごとに使える言語バージョンが決まっている、ということだ。細かい言語バージョンまで指定する場合、それが動く環境を選ぶようにしてやる必要がある。&lt;a href=&quot;#f-ed76c93f&quot; name=&quot;fn-ed76c93f&quot; title=&quot;Linuxの場合はUbuntu 12.04が標準の環境だからか、困ったことはない。14.04だけにしか無いバージョンを指定する必要があったらどうするんだろう?&quot;&gt;*4&lt;/a&gt;&lt;br /&gt;
+ということで、例えば &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt; 2.1.10 でテストを実行したければ &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSX&quot;&gt;OSX&lt;/a&gt; 10.10 もしくは 10.11 を指定する必要がある……んだけど、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Travis&quot;&gt;Travis&lt;/a&gt; CIのドキュメントを見てもぱっとわかるページがない。困ってたところ教えてもらった。ここにあった。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://docs.travis-ci.com/user/languages/objective-c#Supported-OS-X-iOS-SDK-versions&quot;&gt;Building an Objective-C Project - Travis CI&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Objective-C&quot;&gt;Objective-C&lt;/a&gt;! いやまあ実際には&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Objective-C&quot;&gt;Objective-C&lt;/a&gt;環境も&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Xcode&quot;&gt;Xcode&lt;/a&gt;自体も(直接的には)要らないんだけど、これを経由して間接的に&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSX&quot;&gt;OSX&lt;/a&gt;のバージョンを指定してやることができる。&lt;br /&gt;
+これが本当に&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Mac&quot;&gt;Mac&lt;/a&gt;でしか動かないでいいビルドなら設定全体に &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/osx&quot;&gt;osx&lt;/a&gt;_image を指定してやればいい。つまり、こう。&lt;/p&gt;
+&lt;pre class=&quot;code lang-yaml&quot; data-lang=&quot;yaml&quot; data-unlink&gt;&lt;span class=&quot;synIdentifier&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; ruby
+
+&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synConstant&quot;&gt;2.1&lt;/span&gt;
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;2.2.3
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;2.3.0
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;ruby-head
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;rbx
+
+&lt;span class=&quot;synIdentifier&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;osx
+
+&lt;span class=&quot;synIdentifier&quot;&gt;osx_image&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; xcode7.3
+
+&lt;span class=&quot;synIdentifier&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;synIdentifier&quot;&gt;allow_failures&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; ruby-head
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; rbx
+&lt;/pre&gt;&lt;p&gt;しかし我々は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Linux&quot;&gt;Linux&lt;/a&gt;でも走らせたいのでこれでは困る。ちなみに上記の設定で単純に &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Linux&quot;&gt;Linux&lt;/a&gt; でも動かすようにすると&lt;a href=&quot;#f-07a45aca&quot; name=&quot;fn-07a45aca&quot; title=&quot;逆に言うと普通にLinuxでも動かす設定に osx_image を加えると&quot;&gt;*5&lt;/a&gt;、以下のようになる(ビルドがこけてるのは別の理由)。もしかしたら実害はないのかもしれないが、キモいしギョッとするのでこれはイヤだ。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20160419/20160419130017.png&quot; alt=&quot;f:id:tagomoris:20160419130017p:plain&quot; title=&quot;f:id:tagomoris:20160419130017p:plain&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;ということで、環境の組合せを直接指定することになって、これは matrix のもうひとつの機能であるところの includes を使う。&lt;/p&gt;
+&lt;pre class=&quot;code lang-yaml&quot; data-lang=&quot;yaml&quot; data-unlink&gt;&lt;span class=&quot;synIdentifier&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; ruby
+
+&lt;span class=&quot;synComment&quot;&gt;# http://rubies.travis-ci.org/&lt;/span&gt;
+&lt;span class=&quot;synComment&quot;&gt;# See here for osx_image -&amp;gt; OSX versions: https://docs.travis-ci.com/user/languages/objective-c&lt;/span&gt;
+&lt;span class=&quot;synIdentifier&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;synIdentifier&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; 2.1.10
+      &lt;span class=&quot;synIdentifier&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; linux
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; 2.2.4
+      &lt;span class=&quot;synIdentifier&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; linux
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; 2.3.0
+      &lt;span class=&quot;synIdentifier&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; linux
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; ruby-head
+      &lt;span class=&quot;synIdentifier&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; linux
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; 2.1.0
+      &lt;span class=&quot;synIdentifier&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; osx
+      &lt;span class=&quot;synIdentifier&quot;&gt;osx_image&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; xcode7.3&lt;span class=&quot;synComment&quot;&gt; # OSX 10.11&lt;/span&gt;
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; 2.2.4
+      &lt;span class=&quot;synIdentifier&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; osx
+      &lt;span class=&quot;synIdentifier&quot;&gt;osx_image&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; xcode7.1&lt;span class=&quot;synComment&quot;&gt; # OSX 10.10&lt;/span&gt;
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; ruby-head
+      &lt;span class=&quot;synIdentifier&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; osx
+      &lt;span class=&quot;synIdentifier&quot;&gt;osx_image&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; xcode &lt;span class=&quot;synConstant&quot;&gt;7.3&lt;/span&gt;&lt;span class=&quot;synComment&quot;&gt; # OSX 10.11&lt;/span&gt;
+  &lt;span class=&quot;synIdentifier&quot;&gt;allow_failures&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;synStatement&quot;&gt;- &lt;/span&gt;&lt;span class=&quot;synIdentifier&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;synSpecial&quot;&gt;:&lt;/span&gt; ruby-head
+&lt;/pre&gt;&lt;p&gt;これは勝手な想像だけど、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Travis&quot;&gt;Travis&lt;/a&gt; CIの内部的には rvm や os の組合せから matrix を作っているんじゃないかなーという気がする。で、この指定方法はその内部表現(に近いもの)を直接指定していることになる、んじゃないかな、たぶん。&lt;br /&gt;
+やること自体はこれだけだけど、探し回ってもあんまり良い設定サンプルが無かったので、ここに書いておこうと思った。これで求めているビルド環境の組合せが作れた。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20160419/20160419130629.png&quot; alt=&quot;f:id:tagomoris:20160419130629p:plain&quot; title=&quot;f:id:tagomoris:20160419130629p:plain&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;なお、matrixの元になる掛け算対象の設定項目リストは、それぞれの言語のドキュメントページにその名も &quot;Build Matrix&quot; として項目がある。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://docs.travis-ci.com/user/languages/ruby#Build-Matrix&quot;&gt;https://docs.travis-ci.com/user/languages/ruby#Build-Matrix&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;まとめ&lt;/h4&gt;
+    &lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Travis&quot;&gt;Travis&lt;/a&gt; CIさんにはいつもいつもお世話になっております。ありがとうございます。&lt;br /&gt;
+あと&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Windows&quot;&gt;Windows&lt;/a&gt;環境は AppVeyor を使わせてもらってます。こっちもお世話になっています。ありがとうございます。&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-cbdf3722&quot; name=&quot;f-cbdf3722&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;USのお昼にpushするとマジでビルドが走るまでの時間が違うのが体感できる……気がする&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-1e833f27&quot; name=&quot;f-1e833f27&quot; class=&quot;footnote-number&quot;&gt;*2&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;ほどほどに古い、サポート対象にしても構わないもの、という意味&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-161e95f2&quot; name=&quot;f-161e95f2&quot; class=&quot;footnote-number&quot;&gt;*3&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/GitHub&quot;&gt;GitHub&lt;/a&gt;上でのpull-requestのCIとかはグリーンつまり成功と表示される&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-ed76c93f&quot; name=&quot;f-ed76c93f&quot; class=&quot;footnote-number&quot;&gt;*4&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Linux&quot;&gt;Linux&lt;/a&gt;の場合は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ubuntu&quot;&gt;Ubuntu&lt;/a&gt; 12.04が標準の環境だからか、困ったことはない。14.04だけにしか無いバージョンを指定する必要があったらどうするんだろう?&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-07a45aca&quot; name=&quot;f-07a45aca&quot; class=&quot;footnote-number&quot;&gt;*5&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;逆に言うと普通に&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Linux&quot;&gt;Linux&lt;/a&gt;でも動かす設定に &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/osx&quot;&gt;osx&lt;/a&gt;_image を加えると&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Tue, 19 Apr 2016 13:08:57 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/10328537792371739619</guid>
+          
+          <enclosure url="http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20160419/20160419130017.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>GradleでMaven Centralにライブラリを公開する</title>
+          <link>http://tagomoris.hatenablog.com/entry/2016/02/16/114226</link>          <description>&lt;p&gt;前にこんなエントリを書いたが、このときは&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/maven&quot;&gt;maven&lt;/a&gt;から実行してた。今回はgradleから。参考にしたエントリはいくつかあったけど、ずばりというのがなくてつらかった。あれこれ試して組み合わせた。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/20141028/1414485679&quot;&gt;&amp;#x306F;&amp;#x3058;&amp;#x3081;&amp;#x3066;&amp;#x306E;maven central &amp;#x516C;&amp;#x958B; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;あと&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Maven&quot;&gt;Maven&lt;/a&gt; Central(というかSonaType &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;)もちょっと変わってるのでそのへんも。なお環境は適当な&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Mac&quot;&gt;Mac&lt;/a&gt;に適当にgradleを入れた。以上。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;前と変わらないところ&lt;/h4&gt;
+    
+&lt;ul&gt;
+&lt;li&gt;GPGのセットアップ&lt;/li&gt;
+&lt;li&gt;パッケージ&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%CC%BE%C1%B0%B6%F5%B4%D6&quot;&gt;名前空間&lt;/a&gt;を決める&lt;/li&gt;
+&lt;li&gt;アカウント登録&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;パッケージ&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%CC%BE%C1%B0%B6%F5%B4%D6&quot;&gt;名前空間&lt;/a&gt;は今回は前のと違ったので、申請は今回もやった。前と同じようにやってさくっと完了。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;gradle環境の設定&lt;/h4&gt;
+    &lt;p&gt;&quot;$HOME/.gradle/gradle.properties&quot; に行う。&lt;/p&gt;
+&lt;pre class=&quot;code&quot; data-lang=&quot;&quot; data-unlink&gt;org.gradle.daemon=true
+signing.keyId=DEADBEEF
+signing.password=mypassphrase_for_gpgkey
+signing.secretKeyRingFile=/Users/tagomoris/.gnupg/secring.gpg
+sonatypeUsername=tagomoris
+sonatypePassword=mypassword_for_sonatype&lt;/pre&gt;&lt;p&gt;最初の1行は普通の便利設定で、他はJarの公開用。&lt;br /&gt;
+パスワードや&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D1%A5%B9%A5%D5%A5%EC%A1%BC%A5%BA&quot;&gt;パスフレーズ&lt;/a&gt;を毎回コンソールで聞かせる設定とかにする流儀もあるみたいだけど、とりあえずパス。ベタ書き。ここに書いておけばgradleの &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/maven&quot;&gt;maven&lt;/a&gt; plugin が読んでくれる。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;build.gradle の記述&lt;/h4&gt;
+    &lt;p&gt;がんばった。全体は&lt;a href=&quot;https://github.com/isucon/isucon-bench-java/blob/master/build.gradle&quot;&gt;&amp;#x3053;&amp;#x3053;&lt;/a&gt;にあるので、ポイントをいくつか抜き出して書く。&lt;/p&gt;
+&lt;pre class=&quot;code lang-groovy&quot; data-lang=&quot;groovy&quot; data-unlink&gt;apply plugin: &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;java&amp;quot;&lt;/span&gt;
+apply plugin: &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;application&amp;quot;&lt;/span&gt;
+apply plugin: &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;maven&amp;quot;&lt;/span&gt;
+apply plugin: &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;signing&amp;quot;&lt;/span&gt;
+
+group = &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;net.isucon.bench&amp;quot;&lt;/span&gt;
+archivesBaseName = &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;isucon-bench&amp;quot;&lt;/span&gt;
+version = &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;0.1.1&amp;quot;&lt;/span&gt;
+description = &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;Benchmark framework for Web applications, especially for ISUCON&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/java&quot;&gt;java&lt;/a&gt; と application &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;はビルドと実行用のもの、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/maven&quot;&gt;maven&lt;/a&gt; と signing が&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/maven&quot;&gt;maven&lt;/a&gt; centralでの公開用のもの。その下はパッケージの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%E1%A5%BF%A5%C7%A1%BC%A5%BF&quot;&gt;メタデータ&lt;/a&gt;宣言用。あとで使う。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/maven&quot;&gt;maven&lt;/a&gt;-publish &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;というのもあるみたいだったが、あれこれ試したところそれは自分で &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/maven&quot;&gt;maven&lt;/a&gt; repository server を作って運用するようなときに、そこにpushするためのものっぽい。code signingと組み合わせるとうまく動かないという話が多くて、自分もやってみたところどうもダメな感じだった。なんかものすごい色々コード書けばできる的な話もあったけど、何のために&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;使ってんのか分からなくなる的な展開が見えて避けた。&lt;/p&gt;
+&lt;pre class=&quot;code lang-groovy&quot; data-lang=&quot;groovy&quot; data-unlink&gt;&lt;span class=&quot;synComment&quot;&gt;//set build variables based on build type (release, continuous integration, development)&lt;/span&gt;
+&lt;span class=&quot;synSpecial&quot;&gt;def&lt;/span&gt; isDevBuild
+&lt;span class=&quot;synSpecial&quot;&gt;def&lt;/span&gt; isCiBuild
+&lt;span class=&quot;synSpecial&quot;&gt;def&lt;/span&gt; isReleaseBuild
+&lt;span class=&quot;synSpecial&quot;&gt;def&lt;/span&gt; sonatypeRepositoryUrl
+&lt;span class=&quot;synStatement&quot;&gt;if&lt;/span&gt; (hasProperty(&lt;span class=&quot;synConstant&quot;&gt;&amp;quot;release&amp;quot;&lt;/span&gt;)) {
+    isReleaseBuild = &lt;span class=&quot;synConstant&quot;&gt;true&lt;/span&gt;
+    sonatypeRepositoryUrl = &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;https://oss.sonatype.org/service/local/staging/deploy/maven2/&amp;quot;&lt;/span&gt;
+} &lt;span class=&quot;synStatement&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;synStatement&quot;&gt;if&lt;/span&gt; (hasProperty(&lt;span class=&quot;synConstant&quot;&gt;&amp;quot;ci&amp;quot;&lt;/span&gt;)) {
+    isCiBuild = &lt;span class=&quot;synConstant&quot;&gt;true&lt;/span&gt;
+    version += &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;-SNAPSHOT&amp;quot;&lt;/span&gt;
+    sonatypeRepositoryUrl = &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;https://oss.sonatype.org/content/repositories/snapshots/&amp;quot;&lt;/span&gt;
+} &lt;span class=&quot;synStatement&quot;&gt;else&lt;/span&gt; {
+    isDevBuild = &lt;span class=&quot;synConstant&quot;&gt;true&lt;/span&gt;
+    version += &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;-SNAPSHOT&amp;quot;&lt;/span&gt;
+}
+
+repositories {
+    mavenCentral()
+}
+&lt;/pre&gt;&lt;p&gt;普通にビルドしただけでSonaTypeに公開されたらたまらんのでリリース作業用の設定を明示的に行うように変更。CIの場合はSNAPSHOTを公開用とは別の場所に上げるようにしている。まあCIまわしてないんだけど……他で(ちゃんとやるケースで)真似したくなったときのために。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/dependency&quot;&gt;dependency&lt;/a&gt;, compileJava, mainClassName, run あたりは普通に &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/java&quot;&gt;java&lt;/a&gt;, application なビルド/実行のためのものなので割愛。javadocJar, sourcesJar, artifacts は見ればわかるので割愛。&lt;/p&gt;
+&lt;pre class=&quot;code lang-groovy&quot; data-lang=&quot;groovy&quot; data-unlink&gt;signing {
+    required { isReleaseBuild }
+    sign configurations.archives
+}
+
+uploadArchives {
+    repositories {
+        &lt;span class=&quot;synStatement&quot;&gt;if&lt;/span&gt; (isDevBuild) {
+            mavenLocal()
+        }
+        &lt;span class=&quot;synStatement&quot;&gt;else&lt;/span&gt; {
+            mavenDeployer {
+                &lt;span class=&quot;synStatement&quot;&gt;if&lt;/span&gt;(isReleaseBuild) {
+                    beforeDeployment { MavenDeployment deployment &lt;span class=&quot;synStatement&quot;&gt;-&amp;gt;&lt;/span&gt; signing.signPom(deployment) }
+                }
+
+                repository(url: sonatypeRepositoryUrl) {
+                    authentication(userName: sonatypeUsername, password: sonatypePassword)
+                }
+
+                pom.project {
+                    name &lt;span class=&quot;synConstant&quot;&gt;&#39;isucon-bench&#39;&lt;/span&gt;
+                    packaging &lt;span class=&quot;synConstant&quot;&gt;&#39;jar&#39;&lt;/span&gt;
+                    description &lt;span class=&quot;synConstant&quot;&gt;&#39;Benchmark framework for Web applications, especially for ISUCON&#39;&lt;/span&gt;
+                    url &lt;span class=&quot;synConstant&quot;&gt;&#39;http://www.example.com/example-application&#39;&lt;/span&gt;
+
+                    scm {
+                        url &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;scm:git@github.com:isucon/isucon-bench-java.git&amp;quot;&lt;/span&gt;
+                        connection &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;scm:git@github.com:isucon/isucon-bench-java.git&amp;quot;&lt;/span&gt;
+                        developerConnection &lt;span class=&quot;synConstant&quot;&gt;&amp;quot;scm:git@github.com:isucon/isucon-bench-java.git&amp;quot;&lt;/span&gt;
+                    }
+                    licenses {
+                        license {
+                            name &lt;span class=&quot;synConstant&quot;&gt;&#39;MIT&#39;&lt;/span&gt;
+                            url &lt;span class=&quot;synConstant&quot;&gt;&#39;https://opensource.org/licenses/MIT&#39;&lt;/span&gt;
+                        }
+                    }
+                    developers {
+                        developer {
+                            id &lt;span class=&quot;synConstant&quot;&gt;&#39;tagomoris&#39;&lt;/span&gt;
+                            name &lt;span class=&quot;synConstant&quot;&gt;&#39;Satoshi Tagomori&#39;&lt;/span&gt;
+                            email &lt;span class=&quot;synConstant&quot;&gt;&#39;tagomoris@gmail.com&#39;&lt;/span&gt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+&lt;/pre&gt;&lt;p&gt;このへんも見ればだいたいわかるが、丸っと書いてあるページがなくて難儀した。開発時ビルドにはスキップする設定で、書名とかパッケージの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%E1%A5%BF%A5%C7%A1%BC%A5%BF&quot;&gt;メタデータ&lt;/a&gt;とかが書いてある。&lt;/p&gt;&lt;p&gt;この設定を書いておいたら、あとはコマンドでは &quot;gradle clean &amp;&amp; gradle uploadArchives -Prelease&quot; すればSonaTypeの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA&quot;&gt;リポジトリ&lt;/a&gt;にアップロードまでやれる。単に uploadArchives するとなんか変なゴミが含まれたJarが作られてしまった気がしたのでいちおう今のところはこうしている。それは不要だとか、綺麗なJarを一発で作る方法があったら教えてほしい。&lt;/p&gt;&lt;p&gt;まあなんにしろ、これでうまくいく。&lt;/p&gt;
+&lt;pre class=&quot;code&quot; data-lang=&quot;&quot; data-unlink&gt;$ gradle clean &amp;amp;&amp;amp; gradle uploadArchives -Prelease
+:clean
+
+BUILD SUCCESSFUL
+
+Total time: 0.863 secs
+:compileJava
+注意:入力ファイルの操作のうち、未チェックまたは安全ではないものがあります。
+注意:詳細は、-Xlint:uncheckedオプションを指定して再コンパイルしてください。
+:processResources UP-TO-DATE
+:classes
+:jar
+:startScripts
+:distTar
+:distZip
+:javadocJar
+:sourcesJar
+:signArchives
+:uploadArchives
+Could not find metadata net.isucon.bench:isucon-bench/maven-metadata.xml in remote (https://oss.sonatype.org/service/local/staging/deploy/maven2/)
+
+BUILD SUCCESSFUL
+
+Total time: 1 mins 3.332 secs&lt;/pre&gt;&lt;p&gt;なんか通知ぽいものが出ているが、これはSonaTypeの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA&quot;&gt;リポジトリ&lt;/a&gt;が新しくなって以降出る(ことがある)ようになったもの。とりあえず無視してよい。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;SonaType Nexus Repositoryでの手続き&lt;/h4&gt;
+    &lt;p&gt;これが変わったところ。先程のコマンドでSonaTypeの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA&quot;&gt;リポジトリ&lt;/a&gt;には格納された(stagingになった)はずだが、そこから先の処理をワンステップやらないといけない。新しいWeb UI (Nexus Repository)が登場する。&lt;br /&gt;
+なお以下のページに案内がある。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B9%A5%AF%A5%EA%A1%BC%A5%F3%A5%B7%A5%E7%A5%C3%A5%C8&quot;&gt;スクリーンショット&lt;/a&gt;とかあって前よりだいぶ分かりやすいので、読むとよい。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://central.sonatype.org/pages/releasing-the-deployment.html&quot;&gt;Releasing the Deployment&lt;/a&gt;&lt;/p&gt;&lt;p&gt;で、具体的にはこのページを開く: &lt;a href=&quot;https://oss.sonatype.org/index.html#stagingRepositories&quot;&gt;https://oss.sonatype.org/index.html#stagingRepositories&lt;/a&gt;&lt;/p&gt;&lt;p&gt;認証は作成してあるSonaTypeのアカウントで通れる。(開いてなければ)左側のメニューから &quot;Staging Repositories&quot; をクリックすると、いろいろ見られるリストの中に自分がアップロードしたっぽい名前があることを確認する。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://i.gyazo.com/d6a722eb1925c3009627bceed2b8f549.png&quot; class=&quot;http-image&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://i.gyazo.com/d6a722eb1925c3009627bceed2b8f549.png&quot; class=&quot;http-image&quot; alt=&quot;https://i.gyazo.com/d6a722eb1925c3009627bceed2b8f549.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;選択すると上のメニューで &quot;Close&quot; と &quot;Drop&quot; のボタンが有効になるはず。なったら &quot;Close&quot; をクリックして、ダイアログから &quot;confirm&quot; する。このときパッケージになにか問題があるとエラーになるらしい(なったことがない)。問題がなければ該当の staging repository の状態が closed になる。問題なければそのまま &quot;Release&quot; ボタンが有効になるので、押してリリース。&lt;/p&gt;&lt;p&gt;完了したら&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA&quot;&gt;リポジトリ&lt;/a&gt;の管理チケットに完了したよとコメントを書くと、staging -&gt; release の手続きの自動化を有効にしてもらえて、一件落着。リリースされたら、Nexus Repository内でパッケージ名で検索したとき、該当バージョンが releases 下にあるように表示されるからわかるはず。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;完了!&lt;/h4&gt;
+    &lt;p&gt;なお最近試したところ &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Maven&quot;&gt;Maven&lt;/a&gt; Central の検索画面に出てくるようになるまではだいぶ時間がかかった。が、その状態で pom.&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/xml&quot;&gt;xml&lt;/a&gt; に書いてみたところ正常にダウンロードできたので、あまり気にする必要はなさそう。&lt;br /&gt;
+あと一度自動リリースが有効になった&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA&quot;&gt;リポジトリ&lt;/a&gt;で staging を手動で close してみたら、なんか変なことになったかも。stagingから出ていかなくなってしまった。焦らず落ち着いて様子を見よう。&lt;/p&gt;&lt;p&gt;なんにしろ、これでできた。やってしまえばなんとかなる。便利。&lt;/p&gt;
+
+&lt;/div&gt;</description>          <pubDate>Tue, 16 Feb 2016 11:42:26 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/10328537792363542454</guid>
+          
+          <enclosure url="https://i.gyazo.com/d6a722eb1925c3009627bceed2b8f549.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>CROSS 2016に行ってきた＆しゃべってきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2016/02/09/125623</link>          <description>&lt;p&gt;&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2F2016.cross-party.com%2Fprogram%2Fc5&quot; title=&quot;エンジニアがいるべき場所は米国なのか？日本なのか？～日本でのグローバルなプロダクトやサービスの開発とは | エンジニアサポートCROSS2016&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://2016.cross-party.com/program/c5&quot;&gt;2016.cross-party.com&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;先週金曜に横浜&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C2%E7%A4%B5%A4%F3%B6%B6%A5%DB%A1%BC%A5%EB&quot;&gt;大さん橋ホール&lt;/a&gt;であったCROSS 2016に行ってきた。上記のセッションにスピーカーの一人として誘っていただいてたので、参加して、日本で・国をまたいで仕事をするということについて思うところをしゃべったりとか。&lt;br /&gt;
+これは日本で働くか米国に移住するかみたいな二択では決してなく、いろいろ日本にいながらやれることはあるし、逆に最低限やっておかないといけないことももちろんある&lt;a href=&quot;#f-6cd408e9&quot; name=&quot;fn-6cd408e9&quot; title=&quot;OSS、コメントやコミットコメントやドキュメントやメールでの英語のやりとりなど&quot;&gt;*1&lt;/a&gt;、でもまあ技術がちゃんとあっていいコード書けることも大事だよね、とか思いながらしゃべっていたが、ちゃんと伝わったかなあ。&lt;/p&gt;&lt;p&gt;いっしょに登壇してた @kuenishi さんの以下のエントリに @hasegaw さんの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/tweet&quot;&gt;tweet&lt;/a&gt;が引用されてるけど、そうそう、そういう感じなんだよ! という気はします。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://kuenishi.hatenadiary.jp/entry/2016/02/09/100111&quot;&gt;&amp;#x30A8;&amp;#x30F3;&amp;#x30B8;&amp;#x30CB;&amp;#x30A2;CROSS 2016&amp;#x3067;&amp;#x767B;&amp;#x58C7;&amp;#x3057;&amp;#x3066;&amp;#x304D;&amp;#x307E;&amp;#x3057;&amp;#x305F; - kuenishi&amp;#39;s blog&lt;/a&gt;&lt;/p&gt;&lt;p&gt;興味があったら上記CROSSのセッションページに動画があるので、そちらをどうぞ。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;CROSSについて&lt;/h4&gt;
+    &lt;p&gt;大勢の参加者がいてすばらしいことだけど、セッションのテーマが働きかたとか転職とかにだいぶ寄っているような気はして、(自分もそういう系ので話しておいてなんだけど)だいぶ食傷気味になる、という気がする。これが求められているということなら、自分の好みのカンファレンスとはちょっと違ってきたなあ、という感想になった。&lt;/p&gt;&lt;p&gt;あともうとにかく音響がひどい。自分たちがしゃべっているとき、比較的近くでデイリーポータル(?)の企画かなにかがすごい音量でアナウンスしててつらかった。後ろのほうの席の人、こちらの話し声が聞こえてなさそうだったしなあ。ホールの雰囲気が面白いのはわかるけどあれじゃ本末転倒だ。&lt;/p&gt;&lt;p&gt;終わったあと近くのビアバーで飲んでたけど、途中から合流した某社の若い人になんかおっさんくさいことを説教っぽくしゃべってしまった気がする。おっさん力の向上がつらい。&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-6cd408e9&quot; name=&quot;f-6cd408e9&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;、コメントやコミットコメントやドキュメントやメールでの英語のやりとりなど&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Tue, 09 Feb 2016 12:56:23 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653586347156603849</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>2015年を振り返ってみる</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/12/31/212337</link>          <description>&lt;p&gt;今年はとにかく仕事してた……。ということで、Blogエントリ数を見てみるとこれまでの数年に較べてだいぶ少ない。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;転職した&lt;/h4&gt;
+    &lt;p&gt;大手インターネットサービス&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%BB%F6%B6%C8&quot;&gt;事業&lt;/a&gt;者から、いろいろあって結果的には西海岸のスタートアップ(の東京オフィス)に移った。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;http://tagomoris.hatenablog.com/embed/2015/01/28/121908&quot; title=&quot;退職します - たごもりすメモ&quot; class=&quot;embed-card embed-blogcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/01/28/121908&quot;&gt;tagomoris.hatenablog.com&lt;/a&gt;&lt;/cite&gt;&lt;br /&gt;
+&lt;iframe src=&quot;http://tagomoris.hatenablog.com/embed/2015/03/02/114321&quot; title=&quot;就職しました - たごもりすメモ&quot; class=&quot;embed-card embed-blogcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/03/02/114321&quot;&gt;tagomoris.hatenablog.com&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;今年のいちばん大きな変化だったのは間違いない。このあとUSオフィスに少し行ってたり、この「いろいろあって」のときに考えてたことをエントリに書いたりもしていた。&lt;br /&gt;
+結局その後に仕事をしていてこれまでと全く違う環境になったし、書くコードの種類や性質、考えかたなんかもけっこう変わったなという自覚はある。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/04/13/123351&quot;&gt;&amp;#x30DE;&amp;#x30A6;&amp;#x30F3;&amp;#x30C6;&amp;#x30F3;&amp;#x30D3;&amp;#x30E5;&amp;#x30FC;&amp;#x306E;&amp;#x7247;&amp;#x9685;&amp;#x3067;&amp;#x610F;&amp;#x8B58;&amp;#x4F4E;&amp;#x304F;&amp;#x77ED;&amp;#x671F;&amp;#x9593;&amp;#x6EDE;&amp;#x5728;&amp;#x3092;&amp;#x751F;&amp;#x304D;&amp;#x629C;&amp;#x304F;&amp;#x305F;&amp;#x3081;&amp;#x306E;&amp;#x30CE;&amp;#x30A6;&amp;#x30CF;&amp;#x30A6; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/05/11/114841&quot;&gt;&amp;#x5C0F;&amp;#x4E2D;&amp;#x898F;&amp;#x6A21;&amp;#x306E;IT&amp;#x7CFB;&amp;#x4F01;&amp;#x696D;&amp;#x306B;&amp;#x304A;&amp;#x3051;&amp;#x308B;&amp;#x6280;&amp;#x8853;&amp;#x7684;&amp;#x9078;&amp;#x629E;&amp;#x3068;&amp;#x96C7;&amp;#x7528;&amp;#x6226;&amp;#x7565;&amp;#x306B;&amp;#x95A2;&amp;#x3059;&amp;#x308B;&amp;#x96D1;&amp;#x611F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;あとこれまでに較べて格段に英語を使うようになった。おかげでだいぶ慣れてきたなとは思う。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;書いたコード&lt;/h4&gt;
+    &lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;のコードはこれまでのプロダクトのメンテナンス系が多い、けど、Dockerのfluentd logging driverを書いたりmsgpack-&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/ruby&quot;&gt;ruby&lt;/a&gt;のメンテナをやることになったり、そこそこ新しいこともやってはいたかな。あんまり大物ではないけど、自分にとっては新しいものだったりそれなりに影響する範囲も広かったりで、面白い経験にはなっている。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/03/13/150541&quot;&gt;Shib v1&amp;#x306B;&amp;#x3064;&amp;#x3044;&amp;#x3066; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/04/27/113946&quot;&gt;Norikra v1.3.0: &amp;#x5927;&amp;#x5E45;&amp;#x306A;&amp;#x30A2;&amp;#x30C3;&amp;#x30D7;&amp;#x30C7;&amp;#x30FC;&amp;#x30C8; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/08/20/120425&quot;&gt;Docker 1.8 &amp;#x306B; Fluentd logging driver &amp;#x304C;&amp;#x5165;&amp;#x308A;&amp;#x307E;&amp;#x3057;&amp;#x305F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/12/27/154505&quot;&gt;LogStash&amp;#x304B;&amp;#x3089;Treasure Data&amp;#x306B;&amp;#x30C7;&amp;#x30FC;&amp;#x30BF;&amp;#x3092;&amp;#x6295;&amp;#x5165;&amp;#x3059;&amp;#x308B; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/12/29/191819&quot;&gt;Logstash&amp;#x304B;&amp;#x3089;Fluentd&amp;#x306B;&amp;#x30C7;&amp;#x30FC;&amp;#x30BF;&amp;#x3092;&amp;#x8EE2;&amp;#x9001;&amp;#x3059;&amp;#x308B; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;あとはISUCON関係。これはあとで。&lt;br /&gt;
+仕事関連だと社内向けの実装を直すことが多かったのがあって、ほとんどそういうエントリは書かなかったな。Hiveの挙動を一部乗っ取るためのコードをどこにどう書けばいいか、みたいな他社では役に立ちそうもないノウハウはだいぶ得たけど……。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;発表やら執筆やら&lt;/h4&gt;
+    &lt;p&gt;海外のカンファレンスが2件、そのほか国内では&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;::Asia, RubyKaigi, 秋&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C7%A5%D6%A5%B5%A5%DF&quot;&gt;デブサミ&lt;/a&gt;などなど。秋&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C7%A5%D6%A5%B5%A5%DF&quot;&gt;デブサミ&lt;/a&gt;のエントリは書き損ねてるな。7月まで大きいイベントや出張は皆無だったのに、8月からいくつも続いたのでだいぶばたばたしてた。いっぽう初めてヨーロッパに(2度も!)行けたのはいい経験だった。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/06/04/112424&quot;&gt;#norikra meetup 2 &amp;#x3092;&amp;#x3084;&amp;#x3063;&amp;#x3066;&amp;#x304D;&amp;#x305F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/06/05/123342&quot;&gt;&amp;quot;Docker and Fluentd&amp;quot;&amp;#x306E;&amp;#x8A71;&amp;#x3092;&amp;#x3057;&amp;#x305F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/08/20/133339&quot;&gt;JRubyConf.EU &amp;#x3068; Eurucamp &amp;#x306B;&amp;#x884C;&amp;#x3063;&amp;#x3066;&amp;#x304D;&amp;#x305F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/08/23/160337&quot;&gt;YAPC::Asia Tokyo 2015 &amp;#x306B;&amp;#x3044;&amp;#x3063;&amp;#x3066;&amp;#x304D;&amp;#x305F;&amp;#xFF06;&amp;#x3057;&amp;#x3083;&amp;#x3079;&amp;#x3063;&amp;#x3066;&amp;#x304D;&amp;#x305F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/10/07/121131&quot;&gt;java-ja.OSS &amp;#x3067;OSS&amp;#x306E;&amp;#x8A71;&amp;#x3092;&amp;#x3057;&amp;#x3066;&amp;#x304D;&amp;#x305F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/10/23/150208&quot;&gt;EuRuKo2015&amp;#x306B;&amp;#x884C;&amp;#x3063;&amp;#x3066;&amp;#x304D;&amp;#x305F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/12/14/133540&quot;&gt;RubyKaigi 2015&amp;#x306B;&amp;#x884C;&amp;#x3063;&amp;#x3066;&amp;#x304D;&amp;#x305F;&amp;#xFF06;&amp;#x3057;&amp;#x3083;&amp;#x3079;&amp;#x3063;&amp;#x3066;&amp;#x304D;&amp;#x305F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;割と概論や考え方についての話をするケースが多かったので、まあこれはこれで悪くはないんだけど、もうすこしコードの話をしたいなあと思ってはいる。そのためにはコード書かないとなー。いや書いてるんだけど、なんというか、もうすこし話にしやすいやつ……。&lt;/p&gt;&lt;p&gt;あと依頼があって&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/WEB%2BDB%20PRESS&quot;&gt;WEB+DB PRESS&lt;/a&gt;にひとつ記事を寄稿した。個人的には記念にしたいくらいの思い出になりそう。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/12/21/114150&quot;&gt;WEB+DB PRESS Vol.90&amp;#x306B;&amp;#x30B3;&amp;#x30E9;&amp;#x30E0;&amp;#x3092;&amp;#x66F8;&amp;#x3044;&amp;#x305F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;ISUCON&lt;/h4&gt;
+    &lt;p&gt;ISUCON5の出題をやった。9月末に予選、10月末に決勝というスケジュールを調整していたときは準備にたっぷり時間をかけられるはずだったんだけど、仕事の予定がズレ込んで、1年で(仕事だけで)いちばん忙しいという時期にISUCONの準備や各種発表が全部重なるという感じで、死にそうな2ヶ月になった。たぶんこれまでの人生でいちばん忙しくしてたと思う。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/07/10/131140&quot;&gt;&amp;#x4FFA;&amp;#x306E;&amp;#x8003;&amp;#x3048;&amp;#x308B;ISUCON - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/10/31/180114&quot;&gt;ISUCON5&amp;#x306E;&amp;#x51FA;&amp;#x984C;&amp;#x3092;&amp;#x3084;&amp;#x3063;&amp;#x305F; - &amp;#x305F;&amp;#x3054;&amp;#x3082;&amp;#x308A;&amp;#x3059;&amp;#x30E1;&amp;#x30E2;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;まあ、いろいろ不手際があって申し訳なかったとはいえ、いちおう成功したと言っていい終わりかただったのではないかとは思う。個人的にもJava8のコードをだいぶ書いたりで得たものは大きかった。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D9%A5%F3%A5%C1%A5%DE%A1%BC%A5%AF&quot;&gt;ベンチマーク&lt;/a&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C4%A1%BC%A5%EB&quot;&gt;ツール&lt;/a&gt;は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D5%A5%EC%A1%BC%A5%E0%A5%EF%A1%BC%A5%AF&quot;&gt;フレームワーク&lt;/a&gt;になってるので、もうすこし直してちゃんと単独のプロダクトとして出すつもり。ちょこちょこまだ直している途中。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;あれこれ&lt;/h4&gt;
+    &lt;p&gt;その他、ウケた記事もあった。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;::Asiaでの発表からの一連の流れはちょっと感激なくらいで、いろいろ考えてることをぼろっと外に出すと面白いことが起きることもある、といういい例になったかもしれない。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;http://tagomoris.hatenablog.com/embed/2015/01/22/162200&quot; title=&quot;社内ITシステムを構築・運用するのに最重要な3つのポイント - たごもりすメモ&quot; class=&quot;embed-card embed-blogcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/01/22/162200&quot;&gt;tagomoris.hatenablog.com&lt;/a&gt;&lt;/cite&gt;&lt;br /&gt;
+&lt;iframe src=&quot;http://tagomoris.hatenablog.com/embed/2015/08/31/101025&quot; title=&quot;続: OSSプロダクトとコミュニティの話 - たごもりすメモ&quot; class=&quot;embed-card embed-blogcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/08/31/101025&quot;&gt;tagomoris.hatenablog.com&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;加えて転職の時期とISUCON後で2回も morisnite をやったり、いろんな人にお世話になってるなあ、と本当に思うことが多かった。みなさん本当にありがとうございました。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;来年&lt;/h4&gt;
+    &lt;p&gt;Fluentd v0.14に向けたPlugin &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/API&quot;&gt;API&lt;/a&gt;の作り直しを4〜5月頃に途中までやってたんだけど、その後に社内向けの大きい仕事にかかりきりになっていて済んでない。正直あれがblockerになってるので、まずいなあとは思ってる。2016年の最初の大きい仕事としてこれをやるつもり。&lt;/p&gt;&lt;p&gt;他に社内向けには&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Hadoop&quot;&gt;Hadoop&lt;/a&gt;/Hiveよりも少しインフラっぽいことや便利&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C4%A1%BC%A5%EB&quot;&gt;ツール&lt;/a&gt;まわりをやろうとも思ってるので、そのへんの技術をさわってみることも増えると思う。というか、増やしたい。今年は春にひたすらChefと格闘してたくらいで、その後にそっちをあまり見られなくなってしまった。&lt;br /&gt;
+あとは某分散処理をゴニョゴニョ。これは形になるのはもうちょっと先になるかな。面白いコードをあれこれ書ける予定があれこれあるので、楽しみたいと思う。&lt;/p&gt;
+
+&lt;/div&gt;</description>          <pubDate>Thu, 31 Dec 2015 21:23:37 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653586347150917976</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>LogstashからFluentdにデータを転送する</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/12/29/191819</link>          <description>&lt;p&gt;このエントリは&lt;a href=&quot;http://qiita.com/advent-calendar/2015/fluentd&quot;&gt;Fluentd Advent Calendar 2015&lt;/a&gt;の12月25日分の記事です。4日遅れ!&lt;/p&gt;&lt;p&gt;で、本題ですが、もうタイトルそのまんま、logstash-output-fluentd を作りました。&lt;br /&gt;
+&lt;a href=&quot;https://rubygems.org/gems/logstash-output-fluentd&quot;&gt;logstash-output-fluentd | RubyGems.org | your community gem host&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/tagomoris/logstash-output-fluentd&quot;&gt;tagomoris/logstash-output-fluentd &amp;middot; GitHub&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;How to install / use&lt;/h4&gt;
+    &lt;p&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/12/27/154505&quot;&gt;&amp;#x5148;&amp;#x65E5;&amp;#x66F8;&amp;#x3044;&amp;#x305F;&amp;#x3082;&amp;#x306E;&lt;/a&gt;と全く一緒ですが、いちおう書いておきます。&lt;/p&gt;&lt;p&gt;とりあえずインストール。&lt;/p&gt;
+&lt;pre class=&quot;code&quot; data-lang=&quot;&quot; data-unlink&gt;$ bin/plugin install ../logstash-output-fluentd-0.1.0.gem 
+Uninstalling logstash-output-fluentd
+Validating ../logstash-output-fluentd-0.1.0.gem
+Installing logstash-output-fluentd
+Installation successful&lt;/pre&gt;&lt;p&gt;そしたら以下の設定ファイルを用意します。stdinから読み込んで &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/127.0.0.1&quot;&gt;127.0.0.1&lt;/a&gt; (のデフォルトポート 24224)に送るやつ。&lt;/p&gt;
+&lt;pre class=&quot;code&quot; data-lang=&quot;&quot; data-unlink&gt;input {
+  stdin {}
+}
+output {
+  fluentd {
+    host =&amp;gt; &amp;#34;127.0.0.1&amp;#34;
+    tag =&amp;gt; &amp;#34;logstash&amp;#34;
+  }
+}&lt;/pre&gt;&lt;p&gt;起動すればもう使えます。簡単ですね!&lt;/p&gt;
+&lt;pre class=&quot;code&quot; data-lang=&quot;&quot; data-unlink&gt;$ bin/logstash -f example.conf 
+Settings: Default filter workers: 2
+Logstash startup completed
+line 1
+line 2
+line 3
+line 4&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;https://i.gyazo.com/1205f1400186157524418e9ad4f0c3ef.png&quot; class=&quot;http-image&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://i.gyazo.com/1205f1400186157524418e9ad4f0c3ef.png&quot; class=&quot;http-image&quot; alt=&quot;https://i.gyazo.com/1205f1400186157524418e9ad4f0c3ef.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Yay!&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;注意点など&lt;/h4&gt;
+    &lt;p&gt;まだごくシンプルに指定したホストの in_forward に向けてデータを投げ付けるだけですが、まあ、使えなくもないかなというところです。Fluentdのforward&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%C8%A5%B3%A5%EB&quot;&gt;プロトコル&lt;/a&gt;にはいろいろと機能があるんですが、そのへんやover &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/SSL&quot;&gt;SSL&lt;/a&gt;&lt;a href=&quot;#f-c6bd3ade&quot; name=&quot;fn-c6bd3ade&quot; title=&quot;つまりin_secure_forward対応&quot;&gt;*1&lt;/a&gt;やらはまだ全くしておりません。また&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%CA%A3%BF%F4&quot;&gt;複数&lt;/a&gt;ホストへのロードバランスやら死活確認(つまりHA)やらも対応しておりません。&lt;br /&gt;
+そのうちやろうかなあ、どうしようかなあ。&lt;/p&gt;&lt;p&gt;バッファは logstash-output-treasure_data と同じでオンメモリに適当に持っているだけです。デフォルトは短めで50イベントもしくは5秒。これも flush_size および flush_interval で制御できます。正常にシャットダウンすればflushされるけどその時に失敗したり異常終了したりしたらイベントが失われるのも同じです。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;まとめ&lt;/h4&gt;
+    &lt;p&gt;Enjoy logging!&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-c6bd3ade&quot; name=&quot;f-c6bd3ade&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;つまりin_secure_forward対応&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Tue, 29 Dec 2015 19:18:19 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653586347150594703</guid>
+          
+          <enclosure url="https://i.gyazo.com/1205f1400186157524418e9ad4f0c3ef.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>LogStashからTreasure Dataにデータを投入する</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/12/27/154505</link>          <description>&lt;p&gt;このエントリは(2日遅れましたが)&lt;a href=&quot;http://qiita.com/advent-calendar/2015/td&quot;&gt;Treasure Data Advent Calendar 2015&lt;/a&gt;の12月25日分の記事です!&lt;/p&gt;&lt;p&gt;みなさんTreasure Dataにログ入れてますか? FluentdやEmbulkで入れてますよね?&lt;br /&gt;
+しかし世界的に見てFluentdはまだまだ最有力のソフトウェアとは言えず、特にUSやヨーロッパのスタートアップ界隈ではLogStashが強い勢力を誇っています。Treasure Dataにログを投入するためだけにFluentdをインストールするのには抵抗のある向きもそちらには多いのです。&lt;/p&gt;&lt;p&gt;ということで、しょうがないから作りました! 本日から使えます。&lt;br /&gt;
+&lt;a href=&quot;https://rubygems.org/gems/logstash-output-treasure_data&quot;&gt;logstash-output-treasure_data | RubyGems.org | your community gem host&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/tagomoris/logstash-output-treasure_data&quot;&gt;tagomoris/logstash-output-treasure_data &amp;middot; GitHub&lt;/a&gt;&lt;/p&gt;&lt;p&gt;ただし現状ではdev releaseのライブラリに依存しており、この後ちゃんとメンテナンスリリースが出せるよう直すつもりです。また公式のlogstash-pluginsに入れてもらえるようにするつもりです。2016年かな。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;How to install / use&lt;/h4&gt;
+    &lt;p&gt;LogStashを手元に展開したら、以下のコマンド一発でインストールできます。&lt;/p&gt;
+&lt;pre class=&quot;code&quot; data-lang=&quot;&quot; data-unlink&gt;$ bin/plugin install logstash-output-treasure_data
+Validating logstash-output-treasure_data
+Installing logstash-output-treasure_data
+Installation successful&lt;/pre&gt;&lt;p&gt;そして設定ファイルを用意します。以下の設定は stdin を用いて標準入力から1行ずつ読み込み message というフィールドに入れ、そのイベントを treasure_data &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;を用いてTreasure Dataの指定したデータベース/テーブルにアップロードします。(&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/API&quot;&gt;API&lt;/a&gt; Keyやデータベース名、テーブル名は実際に使用するものに置き換えてください)&lt;/p&gt;
+&lt;pre class=&quot;code&quot; data-lang=&quot;&quot; data-unlink&gt;input {
+  stdin {}
+}
+output {
+  treasure_data {
+    apikey =&amp;gt; &amp;#34;0/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&amp;#34;
+    database =&amp;gt; &amp;#34;dbname&amp;#34;
+    table =&amp;gt; &amp;#34;tablename&amp;#34;
+  }
+}&lt;/pre&gt;&lt;p&gt;準備できたら起動するだけです。コンソールにメッセージを適当に入力し、終わったら Ctrl-D で入力を終端できます。終端したら自動的にflushされ、Treasure Dataへのアップロードが行われます。&lt;/p&gt;
+&lt;pre class=&quot;code&quot; data-lang=&quot;&quot; data-unlink&gt;$ bin/logstash -f ~/example.conf 
+Settings: Default filter workers: 2
+Logstash startup completed
+line 1
+line 2
+line 3
+line 4
+line 5
+Logstash shutdown completed&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;https://i.gyazo.com/fc5b009f4ce425e49e17b2e59daa0b38.png&quot; class=&quot;http-image&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://i.gyazo.com/fc5b009f4ce425e49e17b2e59daa0b38.png&quot; class=&quot;http-image&quot; alt=&quot;https://i.gyazo.com/fc5b009f4ce425e49e17b2e59daa0b38.png&quot; width=&quot;640&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;簡単ですね! やった!&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;注意点&lt;/h4&gt;
+    &lt;p&gt;LogStashはソフトウェアの機能としてはバッファリング機構を持っておらず、そのため logstash-output-treasure_data では他の多くの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;にあわせる形で、オンメモリでのキャッシュを行っています。&lt;br /&gt;
+Treasure Dataにあまり細かい単位でbulk importを行うのは非常に効率が悪いため、現在はデフォルトでは10,000レコード、もしくは5分毎にflushを行うことになっています。&lt;a href=&quot;#f-37caa594&quot; name=&quot;fn-37caa594&quot; title=&quot;これらの設定は flush_size および flush_interval で制御できます。&quot;&gt;*1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;通常の手順でLogStashをシャットダウンすればその際にflush/uploadが行われますが、プロセスの異常終了などが起きた場合はメモリ内のデータは失われるのでご注意ください。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;まとめ&lt;/h4&gt;
+    &lt;p&gt;Happy Logging!&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-37caa594&quot; name=&quot;f-37caa594&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;これらの設定は flush_size および flush_interval で制御できます。&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Sun, 27 Dec 2015 15:45:05 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653586347150268439</guid>
+          
+          <enclosure url="https://i.gyazo.com/fc5b009f4ce425e49e17b2e59daa0b38.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>WEB+DB PRESS Vol.90にコラムを書いた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/12/21/114150</link>          <description>&lt;p&gt;明後日ですね、12月23日発売の &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/WEB%2BDB%20PRESS&quot;&gt;WEB+DB PRESS&lt;/a&gt; Vol.90 の15周年記念エッセイ「私を変えたソフトウェア」にて2ページ、記事を書きました。&lt;br /&gt;
+たまに(?)このblogでもエモいアレを書いたりしますが、なんかそういうやつです。原稿料をもらってこういうのを書いたのは初めてです。たぶん。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2Fgihyo.jp%2Fmagazine%2Fwdpress%2Farchive%2F2016%2Fvol90&quot; title=&quot;WEB+DB PRESS Vol.90&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://gihyo.jp/magazine/wdpress/archive/2016/vol90&quot;&gt;gihyo.jp&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;内容は本誌を読んでいただきたいんですが&lt;a href=&quot;#f-34a0e702&quot; name=&quot;fn-34a0e702&quot; title=&quot;PDFでも1部単位で買えますね、いい時代だ&quot;&gt;*1&lt;/a&gt;、要するに今現在に毎日&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%DF%A5%C9%A5%EB%A5%A6%A5%A7%A5%A2&quot;&gt;ミドルウェア&lt;/a&gt;を読み書きして生活するようになったきっかけは何だったか、という話です。きっかけひとつというわけでもなく幾つか段階があるなあと思ったので、それについてつらつら思い出話のようなものを書いてます。&lt;br /&gt;
+改めて読んでみると最後の1ステップ(現職への転職)が抜けているのでそこに何の迷いもなかったようになってますが、もちろん実際はそんなことはありません。が、まあそれはソフトウェア開発者としての転機というよりは人生どう生きるかみたいな部分なので、いいかなと思います。&lt;/p&gt;&lt;p&gt;しかし他の3氏がものすごくて、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;の人と&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/HSP&quot;&gt;HSP&lt;/a&gt;の人と&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Lisp&quot;&gt;Lisp&lt;/a&gt;の人ですよ……。ひええ。あと他がみんな1990年以前の話なのに、自分のやつだけ2010年代になってます。並んでるソフトウェア名も &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Emacs&quot;&gt;Emacs&lt;/a&gt;、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B9%A5%DA%A1%BC%A5%B9%A5%A4%A5%F3%A5%D9%A1%BC%A5%C0%A1%BC&quot;&gt;スペースインベーダー&lt;/a&gt;、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Lisp&quot;&gt;Lisp&lt;/a&gt; と並んで &quot;FluentdとNorikra&quot; とか、うああ。&lt;a href=&quot;#f-bf4ab8dc&quot; name=&quot;fn-bf4ab8dc&quot; title=&quot;書影出てくるまで他の著者が誰かとか知らなかったんだけど、これ知ってたら原稿書けてたのかな……。&quot;&gt;*2&lt;/a&gt;&lt;br /&gt;
+他の方よりもうちょっと卑近な例ということで、これはこれで存在意義があるに違いないと自分に言い聞かせてます。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&amp;bc1=000000&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=tagomoris-22&amp;o=9&amp;p=8&amp;l=as4&amp;m=amazon&amp;f=ifr&amp;ref=ss_til&amp;asins=4774177873&quot; style=&quot;width:120px;height:240px;&quot; scrolling=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;&lt;p&gt;他の記事だと自分には特に特集2の&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C9%A5%E9%A5%AF%A5%A8X&quot;&gt;ドラクエX&lt;/a&gt;の話が興味深くて、ほほうKTにCassandraにExadataとな……みたいな感じです。まだざっと目を通しただけなのでじっくり読みたい。大規模&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/MMORPG&quot;&gt;MMORPG&lt;/a&gt;のバックエンドについて詳しく雑誌に書かれるとはすごい時代だなと思いますね。&lt;/p&gt;&lt;p&gt;ということで、興味があれば読んでみてくださいな、という話でした。&lt;/p&gt;
+&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-34a0e702&quot; name=&quot;f-34a0e702&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;PDFでも1部単位で買えますね、いい時代だ&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-bf4ab8dc&quot; name=&quot;f-bf4ab8dc&quot; class=&quot;footnote-number&quot;&gt;*2&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;書影出てくるまで他の著者が誰かとか知らなかったんだけど、これ知ってたら原稿書けてたのかな……。&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Mon, 21 Dec 2015 11:41:50 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653586347149327315</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>RubyKaigi 2015に行ってきた＆しゃべってきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/12/14/133540</link>          <description>&lt;p&gt;この週末にあったRubyKaigi 2015に参加した。&lt;br /&gt;
+RubyKaigiは&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;コミッタやその他の人々に、特に低レイヤや各種OSの事情に詳しい人なんかも多くて、これはこれで非常に刺激になっていていいなあ。言語ランタイムの最適化の話を何セッションも聞くとかは国内の他のカンファレンスでは自分はあまり経験しないので、いつも楽しい。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;しゃべってきた&lt;/h4&gt;
+    &lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/9o4tgQTdvUuc2s&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/data-analytics-service-company-and-its-ruby-usage-56073823&quot; title=&quot;Data Analytics Service Company and Its Ruby Usage&quot; target=&quot;_blank&quot;&gt;Data Analytics Service Company and Its Ruby Usage&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;EuRuKo 2015で話したのと同じタイトルだけど内容はけっこう違ってて、なぜTDでは&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;でqueue/workerシステムを必死に作っているか、みたいな話をメインに据えて話してきた。あまり&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;のコードそのものに触れることができなかったのがちょっと残念だけど、前提条件から丁寧に、必要性とどうなっているかを説明できたかなという気はする。&lt;br /&gt;
+あとシステムを改善するときにどうしたらいいかという方針の話を&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%BC%C1%B5%BF%B1%FE%C5%FA&quot;&gt;質疑応答&lt;/a&gt;で少しできて、それもすごくよかった。質問してくれた @joker1007 さんのおかげです。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;来年&lt;/h4&gt;
+    &lt;p&gt;京都だ! 楽しみ。行きたいなあ。そのためにもうちょっとコードそのものについて話せるようなネタを作りたいなー。&lt;/p&gt;
+
+&lt;/div&gt;</description>          <pubDate>Mon, 14 Dec 2015 13:35:40 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653586347148520852</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>ISUCON5の出題をやった</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/10/31/180114</link>          <description>&lt;p&gt;(11/2 11:03 末尾に追記と得点経過グラフ掲載)&lt;/p&gt;&lt;p&gt;正確にはいままさに決勝のイベント中なのだが、思った以上に順調にイベントが進行していてヒマな上、完徹の後でコードとか書いてる最中に意識が飛んだりするのでコードも書けない。のでつらつらこれを書いている。&lt;/p&gt;&lt;p&gt;9月末にISUCON5予選をやり、10月末のいま決勝をやってます。3年ぶりのISUCON出題側でしたが、いやはや、過去最高にきつかった回だった。ちょっとday jobのほうでもクリティカルなあれこれが重なったのもあるけど。&lt;br /&gt;
+しかし両方とも、直前までの死ぬ寸前みたいな追い込み状況に対し、イベントとしては&lt;a href=&quot;#f-d1050164&quot; name=&quot;fn-d1050164&quot; title=&quot;トラブルやバグはあれこれあったものの&quot;&gt;*1&lt;/a&gt;大きな破綻もなく進み、本当に良かったと思っている。このイベントがイベントとして成立したことが本当に嬉しい。&lt;/p&gt;&lt;p&gt;そういったあれこれは本当に一緒に出題をやってくれた@kamipoさん、そして実装を手伝ってくれた@hydrakecatさん、@najeiraさん、@makingさん、@taroleoさん、@hokacchaさんのおかげだと思う。出題の傾向・内容ともにだいぶハードだった上、じぶんの作業の遅れがモロにイベント直前に皺寄せでいってしまった。&lt;br /&gt;
+このような状況でコンテストが成立したのは本当にこの人達のおかげだ。ありがとうございました。&lt;/p&gt;&lt;p&gt;これまで何度か言っていたけど、ISUCONを予選だけで終える人達が大多数になってしまった以上、一度は「自分たちが知っている決勝の問題」を予選でもやってみたかった。今年の予選は(ちょっとギリギリ感があったけど)、それがいまできる最大限にできたと思う。今年の予選に参加した人には胸をはって言える。あれはISUCONだ。&lt;/p&gt;&lt;p&gt;決勝はこれまでとだいぶ方向性を変えてみた。詳しい解説は別途書く機会があると思うが、これまでのISUCONとはだいぶ違う。&lt;br /&gt;
+これはふたつの理由があって、ひとつは&lt;a href=&quot;#f-a6088caf&quot; name=&quot;fn-a6088caf&quot; title=&quot;ISUCON2の時にも思っていたことだけど&quot;&gt;*2&lt;/a&gt;これまでと同じような問題では同じような人達が勝ってしまうから、やはり方向を変えたい、ということ。もうひとつは、なんとなくだけど、ISUCONの出題内容・傾向をいちばんドラスティックに変えやすいメンタリティを持っているのは自分なのかなと思ったことがある。&lt;/p&gt;&lt;p&gt;ISUCONはまだ、たかだか5回しかやっていないだけの技術イベントだ。守らないといけないものはないし、これだけ出題というものが大変なんだから、出題者はなんでもやりたいことをやればいいと思う。参加者は不満があれば、自分で勝手にイベントをforkして出題をしてみればいい。&lt;/p&gt;&lt;p&gt;そうやって、全体として面白い、幅広く懐の深い開発者コミュニティになっていければいいなと、そう思う。&lt;/p&gt;&lt;p&gt;ああ楽しかった! 2年参加して今回出題したから、次は少なくとも4年は参加側かな! 超疲れたし!&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h5&gt;結果&lt;/h5&gt;
+    &lt;p&gt;また! またしても! &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/fujiwara&quot;&gt;fujiwara&lt;/a&gt;組に勝たれてしまった!!!&lt;/p&gt;&lt;p&gt;他チームの得点が見えなくなった時間帯も含めた得点グラフはこちら。最終計測のもプロットされてます。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151102/20151102110542.png&quot; alt=&quot;f:id:tagomoris:20151102110542p:plain&quot; title=&quot;f:id:tagomoris:20151102110542p:plain&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D9%A5%F3%A5%C1%A5%DE%A1%BC%A5%AF&quot;&gt;ベンチマーク&lt;/a&gt;走行は全体で1409回、優勝チームは46回実行リクエストがあったようです。最多チームは91回でした。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h5&gt;ということで&lt;/h5&gt;
+    &lt;p&gt;夜な夜なコードを書いていてゆっくりビールも飲めなかった俺の冷蔵庫を溢れさせてやろうという方は &lt;a href=&quot;http://www.amazon.co.jp/registry/wishlist/1ZMDTIXONXWQU&quot;&gt;&amp;#x305C;&amp;#x3072;&amp;#x3053;&amp;#x3061;&amp;#x3089;&amp;#x306E;wishlist&amp;#x3092;&amp;#x3069;&amp;#x3046;&amp;#x305E;!&lt;/a&gt; 本当に溢れたらまたmorisniteやるかー?&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-d1050164&quot; name=&quot;f-d1050164&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;トラブルやバグはあれこれあったものの&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-a6088caf&quot; name=&quot;f-a6088caf&quot; class=&quot;footnote-number&quot;&gt;*2&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;ISUCON2の時にも思っていたことだけど&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Sat, 31 Oct 2015 18:01:14 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653458415126459271</guid>
+          
+          <enclosure url="http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151102/20151102110542.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>EuRuKo2015に行ってきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/10/23/150208</link>          <description>&lt;p&gt;&lt;a href=&quot;http://www.euruko2015.org/&quot;&gt;EuRuKo 2015&lt;/a&gt; に出したトークのproposalが通ったので話しに行ってきた。往復旅費は現勤務先であるTreasure Dataに出してもらいました。ありがたや。宿泊費はなんとオーガナイザーが出してくれた。すごい。&lt;br /&gt;
+2ヶ月ぶり生涯二度目のヨーロッパ、今回は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%AA%A1%BC%A5%B9%A5%C8%A5%EA%A5%A2&quot;&gt;オーストリア&lt;/a&gt;の&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B6%A5%EB%A5%C4%A5%D6%A5%EB%A5%AF&quot;&gt;ザルツブルク&lt;/a&gt;。あいかわらず行くのは遠いし乗り継ぎも必要でちょっと大変だけど、それでも行ってよかった。たいへんよかった。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143448&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143448.png&quot; alt=&quot;f:id:tagomoris:20151023143448p:image:h240&quot; title=&quot;f:id:tagomoris:20151023143448p:image:h240&quot; class=&quot;hatena-fotolife&quot; style=&quot;height:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;前のドイツ行きとちがって今回は日本から他の参加者もいたので、というかまつもとさん、笹田さん、鳥井さんという……ひええ、超豪華メンバー、だったので、英語で疲れたときに普通に日本語で話ができるのがありがたかった。あんまり大勢日本人がいるのも風情がないが完全にぼっちというのもきついので、このくらいだと英語でしゃべる機会もそこそこあるし、いいな。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143452&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143452.jpg&quot; alt=&quot;f:id:tagomoris:20151023143452j:image:w240&quot; title=&quot;f:id:tagomoris:20151023143452j:image:w240&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143451&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143451.jpg&quot; alt=&quot;f:id:tagomoris:20151023143451j:image:w240&quot; title=&quot;f:id:tagomoris:20151023143451j:image:w240&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;ということでしゃべってきた。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/n1WikoOYcIgUA0&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/data-analytics-service-company-and-its-ruby-usage&quot; title=&quot;Data Analytics Service Company and Its Ruby Usage&quot; target=&quot;_blank&quot;&gt;Data Analytics Service Company and Its Ruby Usage&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;ふつうに会社名をタイトルに入れてCFPに応募したのが通ったからそのまましゃべってきたんだけど、カンファレンス全体的に他のスピーカーの人達がまったく自社企業のアピールをしないので、ええコレまずかったのかな、という気分にちょっとなったのは事実。でもこれで通ったしなあ。&lt;br /&gt;
+データ解析系の話は縁が遠い人が多いのかなという印象の反応だったけど、それでも終わったあとで色んな人とあれこれ話をした。自分で作ってる人はやっぱりデータストアやら何やらに苦しんでいる人が多いいっぽう、自分で&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/HDFS&quot;&gt;HDFS&lt;/a&gt;とかをホストせずS3に頼ったほうがよい&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A2%A1%BC%A5%AD%A5%C6%A5%AF%A5%C1%A5%E3&quot;&gt;アーキテクチャ&lt;/a&gt;だということには懐疑的な人も多いようだった。いやー、S3のパフォーマンスすごいよ、という話を何度かした。&lt;br /&gt;
+いっぽう縁が遠い人にはなんでいちいちそんなソフトウェアを自分達で(&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;で)書いてるんだ、ということがうまく伝わらなかったようなので、その部分はもっとちゃんと話すべきだなあという感じ。じつは同じ話で &lt;a href=&quot;http://rubykaigi.org/2015&quot;&gt;RubyKaigi 2015&lt;/a&gt; にも通っているので、そのあたりを直してやりたいと思ってる。&lt;/p&gt;&lt;p&gt;他のスピーカーの話は、なんというか、いろいろ。あまりプロダクションシステムの話をする人は多くなくて、教育だとか素朴な要素技術(&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/SSL&quot;&gt;SSL&lt;/a&gt;/&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/TLS&quot;&gt;TLS&lt;/a&gt;の話とか!)とか、良くも悪くもアカデミックに近いというか開発者コミュニティそのままのカンファレンスという手触りだった。これはEuRuKoだからなのかヨーロッパだからなのか、興味深いところ。隣に座ってた人と話してたらPerl6を話の例に出されてうおっヨーロッパっぽい! と思ったこともあった。&lt;/p&gt;&lt;p&gt;雑談してるときの英語にほとんど困らなくなってたのはよかった。プレゼンテーションも資料を作るところ含めて日本国内でやる場合とほぼ同じ程度の準備、で、まあ英語についてはそう悪くなくやれたんじゃないかな。これはTreasure Dataに入ってから明らかに進歩したところだと思う。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143449&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143449.jpg&quot; alt=&quot;f:id:tagomoris:20151023143449j:image:w240&quot; title=&quot;f:id:tagomoris:20151023143449j:image:w240&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143450&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143450.jpg&quot; alt=&quot;f:id:tagomoris:20151023143450j:image:w240&quot; title=&quot;f:id:tagomoris:20151023143450j:image:w240&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;しかし&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B6%A5%EB%A5%C4%A5%D6%A5%EB%A5%AF&quot;&gt;ザルツブルク&lt;/a&gt;はとにかく街がすごい。まさに多くの日本人が色んなものの刷り込みの結果脳裏に思うような、古き良きヨーロッパの街だ! という感じがする。だって川と橋と教会・聖堂と広場と市壁と断崖と城だぞ。石造りの建物が密集してその間に狭い路地がはりめぐらされてるし、ちょっと山っぽいところを歩いていると木々のむこうから古い城館が現れるし、あちこちに怪しげな門があるし。もうたまらん。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143433&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143433.jpg&quot; alt=&quot;f:id:tagomoris:20151023143433j:image:w240&quot; title=&quot;f:id:tagomoris:20151023143433j:image:w240&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143434&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143434.jpg&quot; alt=&quot;f:id:tagomoris:20151023143434j:image:w240&quot; title=&quot;f:id:tagomoris:20151023143434j:image:w240&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;あとは肉を食べ肉を食べ芋を食べチーズを食べ肉を食べ。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143444&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143444.jpg&quot; alt=&quot;f:id:tagomoris:20151023143444j:image:w240&quot; title=&quot;f:id:tagomoris:20151023143444j:image:w240&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143437&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143437.jpg&quot; alt=&quot;f:id:tagomoris:20151023143437j:image:w240&quot; title=&quot;f:id:tagomoris:20151023143437j:image:w240&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143446&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143446.jpg&quot; alt=&quot;f:id:tagomoris:20151023143446j:image:w240&quot; title=&quot;f:id:tagomoris:20151023143446j:image:w240&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143447&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143447.jpg&quot; alt=&quot;f:id:tagomoris:20151023143447j:image:w240&quot; title=&quot;f:id:tagomoris:20151023143447j:image:w240&quot; class=&quot;hatena-fotolife&quot; style=&quot;width:240px&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;ビールビールビールビールビール。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143429&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143429_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143429j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143429j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143430&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143430_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143430j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143430j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143432&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143432_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143432j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143432j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143435&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143435_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143435j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143435j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143443&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143443_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143443j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143443j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B6%A5%EB%A5%C4%A5%D6%A5%EB%A5%AF&quot;&gt;ザルツブルク&lt;/a&gt;にも大きいビールメーカーがあるらしいし、そのほか地方のビールもあれこれあった。そんなに多く飲んだわけじゃないけど、けっこう満足できる感じでたいへんよい。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143436&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143436_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143436j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143436j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143439&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143439_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143439j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143439j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143438&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143438_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143438j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143438j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143442&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143442_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143442j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143442j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;ウィーンだと甘いものがすごいことになってたらしいが、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B6%A5%EB%A5%C4%A5%D6%A5%EB%A5%AF&quot;&gt;ザルツブルク&lt;/a&gt;でもちょっとだけ楽しんだ。よかった。&lt;/p&gt;&lt;p&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143431&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143431_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143431j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143431j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;span itemscope itemtype=&quot;http://schema.org/Photograph&quot;&gt;&lt;a href=&quot;http://f.hatena.ne.jp/tagomoris/20151023143445&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;url&quot;&gt;&lt;img src=&quot;http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143445_120.jpg&quot; alt=&quot;f:id:tagomoris:20151023143445j:image:medium&quot; title=&quot;f:id:tagomoris:20151023143445j:image:medium&quot; class=&quot;hatena-fotolife&quot; itemprop=&quot;image&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;ということで、非常に良い旅行だった。来年は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D6%A5%EB%A5%AC%A5%EA%A5%A2&quot;&gt;ブルガリア&lt;/a&gt;のソフィアらしい。&lt;br /&gt;
+とにかく普段と異なる経験、USやアジアのカンファレンスに行くのとはまた全然違う経験ができるので、未経験の人には本当にお薦めです。楽しかった!&lt;/p&gt;
+</description>          <pubDate>Fri, 23 Oct 2015 15:02:08 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653458415125572715</guid>
+          
+          <enclosure url="http://cdn-ak.f.st-hatena.com/images/fotolife/t/tagomoris/20151023/20151023143448.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>java-ja.OSS でOSSの話をしてきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/10/07/121131</link>          <description>&lt;p&gt;自分はべつに&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;の偉い人でもなんでもないのだが、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;で話したこととその発展みたいな感じでどうよということがあって、ざらっと話してきた。イベントはこちら。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://connpass.com/event/19690/&quot;&gt;java-ja.OSS - connpass&lt;/a&gt;&lt;/p&gt;&lt;p&gt;で、スライドはこちら。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;の再演でもいいよってことだったけど自分がそれじゃつまらんので、その後の話なんかも含めて取捨選択した。これまでの話は知ってる人が(会場には)やっぱり多かったので、発展的な話題とか細かいところをひろっていくような話にしたつもり。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/AP5zEQaYKANbbu&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/how-to-createimprove-oss-product-and-its-community-revised&quot; title=&quot;How to create/improve OSS product and its community (revised)&quot; target=&quot;_blank&quot;&gt;How to create/improve OSS product and its community (revised)&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;そのものについてどう思うかっていうの、実際に自分に強い意見があるかというとそんなにはなくて、ストレスを感じなくていいケースではいちばんストレスのない方法を淡々と選びたいなあ、と思うくらい。&lt;br /&gt;
+そうでないもの&lt;a href=&quot;#f-6d837f7f&quot; name=&quot;fn-6d837f7f&quot; title=&quot;会社のプロダクトとして推していくケース&quot;&gt;*1&lt;/a&gt;にはそれはそれで色々あるけど、それはまあ仕事だからなあ、という感じ。日本国内のコミュニティだと仕事として&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;をやっている会社がほとんどない関係で、そのあたりの話はちょっと興味深い人はいたかもしれない。あるいは、現実離れして聞こえたかもしれない。……ところで仕事として&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;をやっているTreasure Dataという会社が&lt;a href=&quot;https://jobs.lever.co/treasure-data&quot;&gt;&amp;#x3042;&amp;#x308B;&amp;#x3089;&amp;#x3057;&amp;#x3044;&amp;#x3088;!&lt;/a&gt;&lt;/p&gt;&lt;p&gt;ところで&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;の話をするときに自分がどの視点に立脚しているかを前提として話しておくのは本当はけっこう大事で、それによって考え方や行動様式がだいぶ変わるから。というのは、イベント翌日に&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Twitter&quot;&gt;Twitter&lt;/a&gt;で流れてた&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/tweet&quot;&gt;tweet&lt;/a&gt;を見ても思った。&lt;/p&gt;&lt;p&gt;&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;ja&quot;&gt;&lt;p lang=&quot;ja&quot; dir=&quot;ltr&quot;&gt;俺が「&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%B8%E5%CA%FD%B8%DF%B4%B9&quot;&gt;後方互換&lt;/a&gt;性はソフトウェア作者と利用者の信頼関係の源なんだよ。だから努力に努力を重ねて守るんだよ！！」という講演をした後で、松田さんが &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Rails&quot;&gt;Rails&lt;/a&gt; の文脈で「互換性なんて💩」という講演を始めたの、かなり面白い流れだった &lt;a href=&quot;https://twitter.com/hashtag/java_ja_oss?src=hash&quot;&gt;#java_ja_oss&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takuto Wada (@t_wada) &lt;a href=&quot;https://twitter.com/t_wada/status/651241240332120064&quot;&gt;2015, 10月 6&lt;/a&gt;&lt;/blockquote&gt;&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;&lt;p&gt;&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;ja&quot;&gt;&lt;p lang=&quot;ja&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/t_wada&quot;&gt;@t_wada&lt;/a&gt; そうですね。和田さんも、あと &lt;a href=&quot;https://twitter.com/tagomoris&quot;&gt;@tagomoris&lt;/a&gt; さんも、基本的に同じテーマについて喋ってるはずなんだけど僕が言おうと思ってたこととあんまり重ならないというかむしろ真逆みたいなことをけっこう言ってて、すごい面白いなーと思いながら聞いてました。&lt;/p&gt;&amp;mdash; &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Akira&quot;&gt;Akira&lt;/a&gt; Matsuda (@a_matsuda) &lt;a href=&quot;https://twitter.com/a_matsuda/status/651244999602868224&quot;&gt;2015, 10月 6&lt;/a&gt;&lt;/blockquote&gt;&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;&lt;p&gt;これは当日に @a_matsuda さんの話を聞いててもすごく思っていたところで「あー莫大なユーザと大規模な開発者コミュニティをかかえてる超強力&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;プロダクト&lt;a href=&quot;#f-2377b114&quot; name=&quot;fn-2377b114&quot; title=&quot;Railsね&quot;&gt;*2&lt;/a&gt;はやることが違うなー強いリーダー&lt;a href=&quot;#f-90f607c7&quot; name=&quot;fn-90f607c7&quot; title=&quot;DHH&quot;&gt;*3&lt;/a&gt;もいるしすげーなー」みたいな。立場が違うとやることが変わる。&lt;br /&gt;
+ただし唯一(?)共通していたのが「走り続けないと死ぬ」みたいなやつで、これは&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;の開発とかでもコミッタの人々&lt;a href=&quot;#f-60b22afc&quot; name=&quot;fn-60b22afc&quot; title=&quot;なぜかイベントにぞろぞろいてウケた&quot;&gt;*4&lt;/a&gt;がよく言っていることだと思う。違う視点の話だけど毎日コミットするのを継続するっていうやつ、自分は怠惰なので不可能だけど、なるほどなあ、ということを思いはする。&lt;/p&gt;&lt;p&gt;なんにしろ、こういう機会があって自分の思うところをしゃべったり、他の人の話を聞きながら適度にツッコんだりできる機会はたいへんありがたい。&lt;br /&gt;
+あと夜中まで超面白かった。ありがとうございました。&lt;/p&gt;
+&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-6d837f7f&quot; name=&quot;f-6d837f7f&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;会社のプロダクトとして推していくケース&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-2377b114&quot; name=&quot;f-2377b114&quot; class=&quot;footnote-number&quot;&gt;*2&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Rails&quot;&gt;Rails&lt;/a&gt;ね&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-90f607c7&quot; name=&quot;f-90f607c7&quot; class=&quot;footnote-number&quot;&gt;*3&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;DHH&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-60b22afc&quot; name=&quot;f-60b22afc&quot; class=&quot;footnote-number&quot;&gt;*4&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;なぜかイベントにぞろぞろいてウケた&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Wed, 07 Oct 2015 12:11:31 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653458415123786056</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>続: OSSプロダクトとコミュニティの話</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/08/31/101025</link>          <description>&lt;p&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/08/23/160337&quot;&gt;&amp;#x5148;&amp;#x65E5;&amp;#x66F8;&amp;#x3044;&amp;#x305F;&amp;#x901A;&amp;#x308A;&lt;/a&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;::Asia Tokyo 2015で&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;の開発とメンテナンスについての私見を話したところ、会場で &lt;a href=&quot;http://blog.hatena.ne.jp/t-wada/&quot;&gt;id:t-wada&lt;/a&gt; さんから強烈な質問と、その後にまとまった量のエントリがきた。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;http://t-wada.hatenablog.jp/embed/active-oss-development-vs-simplicity&quot; title=&quot;OSS開発の活発さの維持と良いソフトウェア設計の間には緊張関係があるのだろうか? - t-wadaのブログ&quot; class=&quot;embed-card embed-blogcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;a href=&quot;http://t-wada.hatenablog.jp/entry/active-oss-development-vs-simplicity&quot;&gt;OSS開発の活発さの維持と良いソフトウェア設計の間には緊張関係があるのだろうか? - t-wadaのブログ&lt;/a&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://t-wada.hatenablog.jp/entry/active-oss-development-vs-simplicity&quot;&gt;t-wada.hatenablog.jp&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;t-wadaさんの問題意識については上記エントリを読んでいただくとして、これに関連して&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;::Asia期間中にいろいろな人と話したこと、およびその後に考えたことなどをまとめて書き下しておこうと思う。&lt;br /&gt;
+明快な結論は無い。無いが、自分にとってのなんとなくの指針のようなものには多分なっており、こういうことを考えて自分はこれからコードを書くんだろうな、という気がする。&lt;/p&gt;&lt;p&gt;なお前提として自分が&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;::Asia Tokyo 2015で話した内容がベースにあるので、できればそちらを把握しておいてほしい。t-wadaさんのエントリにあるメモは話した内容をよく反映しているし、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%BC%C1%B5%BF%B1%FE%C5%FA&quot;&gt;質疑応答&lt;/a&gt;の内容などもあるので&lt;a href=&quot;https://www.youtube.com/watch?v=50zhxtwvMJk&quot;&gt;&amp;#x52D5;&amp;#x753B;&lt;/a&gt;を見るとよいかもしれない。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;コントリビューション vs コードの統一性&lt;/h4&gt;
+    &lt;p&gt;ごく当たり前のことだが、ソフトウェアというのは、一人で書いたコードが100%を占めていれば、最も統一性のあるコードになる。ただし人間は2〜3ヶ月も経てば別人に等しい何かに変貌してしまうこともままあるため、ここには「短期間のうちに一人で書いたコード」という制約が付く、こともある。&lt;/p&gt;&lt;p&gt;そのコードに何らかの設計あるいは統一されたスタイルというものが無ければそれはその人の責任だが、それはとりあえず問題外として置いておくことにする。&lt;/p&gt;&lt;p&gt;あるソフトウェアがある。どういった目的のために書かれたのかが明確であり、理解しやすい外部&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/API&quot;&gt;API&lt;/a&gt;を持ち、良い効率で動作する。全体の設計は十分にシンプルで理解しやすく、一瞥すれば統一性があって読みやすいことがわかる。いまこの時に限って言えば、完璧なソフトウェアと言ってよい。&lt;a href=&quot;#f-92554d57&quot; name=&quot;fn-92554d57&quot; title=&quot;自分の理解では、t-wadaさんはこういったことを(理想的に)実現する、ということを抽象して「良いソフトウェア設計」と言ったのだと思っている。&quot;&gt;*1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;さて、このソフトウェアに外部から何らかのコードの貢献がある。それは全く知らない誰かからの機能の追加であったり、(その人にとって)意図しない動作の修正であったり、あるいは数ヶ月後の未来の自分からの仕様の変更であったりする。&lt;/p&gt;&lt;p&gt;このコードの貢献は、元の完璧であったソフトウェアを必ず乱す。当初ありえなかった変更がありえなかったはずの場所に入り、シンプルだった内部&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/API&quot;&gt;API&lt;/a&gt;は拡張された仕様に対応するために醜く引数を足され、ひとつのことだけを正しく行っていた関数はなぜか2つ3つと機能を内包するようになる。&lt;br /&gt;
+貢献者が未熟だから起きるわけではない。どんなに優秀な&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DE&quot;&gt;プログラマ&lt;/a&gt;でも他人のコードの統一性に完璧に寄り添うことはできないし、例え変更を加えるのがオリジナルの開発者であっても、数ヶ月あるいは数年も経つと書くコードの癖は変わる。ソフトウェア開発者はリリース後に必要となる変更を全て予期することはできないし、であれば、予期できなかった変更は元の完璧なコードに不可避な変更を押し付ける。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;プロダクトの開発と利用の促進を進める上で、これは必ず起きることだ、と思う。&lt;/p&gt;&lt;p&gt;もちろんあらゆる貢献を拒絶すればこの変化の進行を最小限に抑えることはできるが、ユーザと&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%E6%A1%BC%A5%B9%A5%B1%A1%BC%A5%B9&quot;&gt;ユースケース&lt;/a&gt;が広がらずメンテナンスの行われないソフトウェアの先に待つものは、単なる停滞でしかない。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;プロダクトにおける沈降 vs コミュニティにおける浮上&lt;/h4&gt;
+    &lt;p&gt;最初は十分に小さく美しく軽快だったソフトウェアが、多方面からの多数のコントリビューションにより大きく醜く鈍重なものになっていく。一方&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;コミュニティにおける開発者たちは常に、小さく美しく、気軽にコントリビューション可能で、そして参入しやすいソフトウェアを求めている。&lt;/p&gt;&lt;p&gt;これは不思議でもなんでもないし、矛盾してもいない。誰だって同じことができるならより労力の小さいほうがいいに決まっている。既存プロダクトのコミッタなら既存プロダクトに変更を加えるほうが簡単だろうし、そうでなければ、まだ十分多くの人には使われていないかもしれないがしかし十分に小さく美しいソフトウェアがあれば、そちらに貢献するほうがおそらく合理的だ。&lt;/p&gt;&lt;p&gt;コミュニティはこうして、全体的には小さく美しいコードを志向する。これは個々のプロダクトが必ず肥大化し醜くなるという事実とバランスして&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C6%B0%C5%AA%CA%BF%B9%D5&quot;&gt;動的平衡&lt;/a&gt;のような状態を作りだす余地を持っており、おそらく、そのふたつが完全にバランスしていれば、それはコミュニティ全体としては健全なのだろうと思う。&lt;a href=&quot;#f-60481963&quot; name=&quot;fn-60481963&quot; title=&quot;ソフトウェアの沈降速度が速くプロダクトの新陳代謝が追い付かなければ全体としてはあまり良くない状態のコードに携わる人数が増え、開発者にとってはストレスフルな状態になる。プロダクトの新陳代謝があまりに早過ぎるサイクルで起きると各々のプロダクトの熟成あるいはユースケースの充実が全く行われず、ユーザにとってはリスキーすぎるコミュニティになるだろう。&quot;&gt;*2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;だからここまでを総合すると、t-wadaさんの疑問に対する答えを書ける。&lt;/p&gt;
+
+    &lt;blockquote&gt;
+        &lt;p&gt;健全な &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt; 社会ときれいなソフトウェア設計との間には、やはり緊張関係はある、ということになるのだろうか。&lt;/p&gt;
+
+    &lt;/blockquote&gt;
+&lt;p&gt;ない。適切なバランスが保たれていれば。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;プロダクトの長い寿命 vs コミュニティにおける新陳代謝&lt;/h4&gt;
+    &lt;p&gt;コミュニティ全体の動向に関係なく、各々のプロダクトはその寿命を可能な限り長くしようとする。これはそのプロダクトに主要開発者として関わっているチームがある限りは自然なことだ。自分が今現在開発しているソフトウェアについて「これはもう使うな」と言える人は多くはないだろう。&lt;br /&gt;
+また別の事情もある。ユーザは大抵の場合、開発者よりもはるかに長い寿命をソフトウェアプロダクトに期待する、ということだ。今問題なく使えているものを変更する理由は普通のユーザには無い。&lt;/p&gt;&lt;p&gt;既に動いていて長い歴史をもっているプロダクトは、大抵強固な開発者チームをもっている。新規参入はやはり難しい……ケースが多い。長い歴史をもつプロダクトには過去様々なことが起きており、新規参入者にとっては理解不可能な設計やコードも、過去の経緯を知っていれば納得できることもある。&lt;br /&gt;
+もちろんコアの開発者チームがあまり大きくなるとコミュニケーションにも影響が出る。&lt;/p&gt;&lt;p&gt;こういった事情がやはり、新規の参入者にとっては障壁になる。こうして若く元気のある人達はこぞって小さく美しいプロダクトの開発に夢中になり、長い寿命をもったプロダクトのコア開発者の平均年齢は、毎年ひとつずつ増える。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;小さくて美しい vs 活発なメンテナンス&lt;/h4&gt;
+    &lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/djb&quot;&gt;djb&lt;/a&gt;という開発者によって書かれた一連のソフトウェアがある。知らない人はぐぐってほしい。……昔は知らない人などいなかったものだが、今ではもしかして、知らない人の方が多いかもしれない。つまり、そういうことだ。&lt;br /&gt;
+djbwareは小さく美しく、ひとつの目的を果たし、バグも(ほとんど)なく、また小さい&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C4%A1%BC%A5%EB&quot;&gt;ツール&lt;/a&gt;の集合により機能を実現する形になっていたから、変化に対しても強靭だった。そしてそれ故に外部からの貢献といったものを受け入れず、孤立していた。&lt;/p&gt;&lt;p&gt;これはおそらく、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/djb&quot;&gt;djb&lt;/a&gt;本人にとっては本望だったのだろうと思う。そしてユーザから見れば、各OS/&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C7%A5%A3%A5%B9%A5%C8%A5%EA%A5%D3%A5%E5%A1%BC%A5%B7%A5%E7%A5%F3&quot;&gt;ディストリビューション&lt;/a&gt;のやり方を無視し、わかりにくい設定と操作方法を押し付け、必要な機能を足してくれないソフトウェアに見えたかもしれない。&lt;/p&gt;&lt;p&gt;世界はdjbwareに支配されなかったし、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Apache&quot;&gt;Apache&lt;/a&gt;や&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Postfix&quot;&gt;Postfix&lt;/a&gt;やBindや、あるいはsupervisordや&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Upstart&quot;&gt;Upstart&lt;/a&gt;やsystemdや、そういった多くのソフトウェアが世界を分割している。&lt;/p&gt;&lt;p&gt;ここでは絶対的な基準や善悪を語っているわけではないから、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/djb&quot;&gt;djb&lt;/a&gt;のやりかたでもよいではないか、という意見はあるだろう。もちろん、どういうやり方をとるかはその人の自由だと思う。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;All-in-one vs Plugin chaos&lt;/h4&gt;
+    &lt;p&gt;ソフトウェアに多くの機能を足しユーザコミュニティと開発者コミュニティを広げつつ、ソフトウェアのコアを小さく美しく保つ方法がある。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;機構の導入だ。&lt;br /&gt;
+ソフトウェアの機能の多くを&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;に移譲し、誰でも&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;を書き公開できるようにしておく。多くの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%E6%A1%BC%A5%B9%A5%B1%A1%BC%A5%B9&quot;&gt;ユースケース&lt;/a&gt;を組込みの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;でカバーしつつ、それ以外に必要なものは必要な人が開発し公開できるようにする。&lt;/p&gt;&lt;p&gt;これはうまくいく。最初の設計が十分にうまく行われていればコアに必要な変更は後々までそう多くはない。多くの人が使いたい機能はもう誰かが過去に必要としたもので、うまくすれば&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;が公開されているからそれを使えばいい。無ければ書いて公開すればいい。&lt;br /&gt;
+ユーザコミュニティが開発者コミュニティの性質を帯び、多数の機能と&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%E6%A1%BC%A5%B9%A5%B1%A1%BC%A5%B9&quot;&gt;ユースケース&lt;/a&gt;が自己増殖的に補完され、それが更にユーザコミュニティの拡大を後押しする。そしてソフトウェアのコアは小さく綺麗に保たれたままだ。&lt;/p&gt;&lt;p&gt;ではこのやり方をとれば何もかも全てがうまくいくかというと、もちろん、そんなことはない。待つのは膨大な数に膨れあがった&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;の混沌だ。&lt;br /&gt;
+目的の実現のためにどの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;を使えばよいか分からず、どの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;がメンテナンスされているかもわからない。似たような機能の&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;がいくつも併存し、あまつさえそれぞれ使いかたが異なる……。&lt;/p&gt;&lt;p&gt;これは要するに All-in-one の場合にソフトウェア開発者が負っていた責任を、あらゆる&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;開発者に分割しただけとも言える。そしてもしかして、全体的な品質で言えば、悪くなってすらいるかもしれない。中心の開発者たちなら維持できたであろうある一定の品質の保証は、こうした社会では期待できないからだ。&lt;/p&gt;&lt;p&gt;それでもこれは、悪いことではない。コミュニティに多くのアクティブな開発者を供給し、より小さい単位でプロダクトの沈降と新陳代謝を促す。より早くより小さい単位でかかるフィードバックと分散された責任は、ひとつのチームの巨大な責任とそのチームの失敗による巨大なカタストロフの脅威よりは、たぶん我々にとっては扱いやすい。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;整備された&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%AC%A5%A4%A5%C9%A5%E9%A5%A4%A5%F3&quot;&gt;ガイドライン&lt;/a&gt; vs 10年ROMってろ&lt;/h4&gt;
+    &lt;p&gt;あるソフトウェアの品質を担保しようとするとき、もちろんコントリビュートされてくるコードの質の高低は非常に重要だ。そしてその質をどうコントロールするかは難しい問題だと思う。&lt;/p&gt;&lt;p&gt;ソフトウェアの変更にはいくつかの種類のものがあるが、最も行いやすいのは、機能を足すことだ。特に似たような機能が既に存在し、それとはちょっとだけ異なる機能を足す、というケースだろう。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Linux&quot;&gt;Linux&lt;/a&gt; kernelに新しい&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C7%A5%D0%A5%A4%A5%B9%A5%C9%A5%E9%A5%A4%A5%D0&quot;&gt;デバイスドライバ&lt;/a&gt;を足す、Dockerに新しいロギングドライバを足す。&lt;/p&gt;&lt;p&gt;しかしこういうケースであれ、コントリビュートされてくるコードの品質には大きな差がある。既に存在する似たような機能のものを参考にすればいいのに、びっくりするくらい独特なコードで書く人は割といる。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA&quot;&gt;リポジトリ&lt;/a&gt;内のコードを読めばなんとなく受け取れる思想のようなものを考慮だにしないかのようなパッチとか。&lt;/p&gt;&lt;p&gt;この問題に対抗する方法はいくつかあるが、ひとつは、よく整備された&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%AC%A5%A4%A5%C9%A5%E9%A5%A4%A5%F3&quot;&gt;ガイドライン&lt;/a&gt;を作ることだ。コードスタイル、設計方針、実装方針および使用してよい&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/API&quot;&gt;API&lt;/a&gt;などについて詳細な&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%AC%A5%A4%A5%C9%A5%E9%A5%A4%A5%F3&quot;&gt;ガイドライン&lt;/a&gt;を書き、それを強制する。違反するコントリビューションは受け付けない。これにより最低限のコードの品質は保たれる。&lt;br /&gt;
+しかしこれは非常に大きな手間と長い時間を必要とする。時代の変化や設計の変更に追従するための労力もわずかとはとても言えないだろう。小さく美しいソフトウェアプロダクトには似つかわしくない。&lt;/p&gt;&lt;p&gt;いっぽうもうひとつの方法は、もっとよく周囲のコードを見てそれを真似しろ、というフィードバックを出すことだ。明文化を避け、しかし明らかに空気を読んでいないコードは明確に拒否する。「10年ROMってろ!」&lt;br /&gt;
+かくして閉鎖的なコミュニティができあがる……。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;独裁者 vs 委員会&lt;/h4&gt;
+    &lt;p&gt;何を受け入れるべきで何を受け入れるべきでないかの判断は非常に難しい。いくつかの超有名プロダクトには独裁者が君臨していて、受け入れるべきないものを明確に拒否する力を振るっている。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Linux&quot;&gt;Linux&lt;/a&gt;における&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Linus&quot;&gt;Linus&lt;/a&gt;、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Python&quot;&gt;Python&lt;/a&gt;におけるGuidoそして&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;におけるMatz。彼らのキャラクターは既に知られているから、言下に拒否するその姿勢は&lt;a href=&quot;#f-533d9abd&quot; name=&quot;fn-533d9abd&quot; title=&quot;時折ネット上のニュースを騒がせることもあるけれど&quot;&gt;*3&lt;/a&gt;おおむね誰にでも受け入れられている。いいなあ。&lt;/p&gt;&lt;p&gt;そうでないコミュニティは&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Apache&quot;&gt;Apache&lt;/a&gt; Foundation傘下あたりに特に多く存在し、それぞれ委員会制とでも言うべき方向で集団での開発を進めている。よく使われているソフトウェアプロダクトにおいてはこれらはほぼ完全にいくつかの企業の勢力争いの場となっているように見える。&lt;br /&gt;
+業界の巨人たる各企業がイチ押しの変更をゴリゴリ入れつつ境界面で押し引きする姿はそのソフトウェアのユーザとしては頼もしいものの、開発者として参考にできるものがあるかというと、無い。ざんねん。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;開発者個人としての自分 vs プロダクトメンテナとしての自分&lt;/h4&gt;
+    &lt;p&gt;開発者個人としては、パッチひとつ送るにもあれこれと面倒な手続きを要求されるコミュニティはできるだけ敬遠したい。あれこれのものを使いつつ、できるだけ明快に使える小さく美しいソフトウェアと関わり生きていきたい。それができるだけのフットワークの軽さと、技術的視点でプロダクトの選択ができるだけのものを維持したい。&lt;/p&gt;&lt;p&gt;プロダクトメンテナとしては、ユーザがいる以上はきちんとメンテナンスをしたいし、また使用範囲が拡大すれば嬉しい。機能拡張の提案は真剣に受け取り、ソフトウェアの肥大化を招くかもしれないとしても受け入れることもあるだろう。そのプロダクトに技術的優位性があると思っている限りはどっしりと座りこんで開発を続けたい。&lt;/p&gt;&lt;p&gt;自分がメンテナをしているプロジェクトに自分でパッチを送れなくなる日が来ないようにする、という努力を続けたい、というはかない決意をするのが精一杯だなあ。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;まとめ&lt;/h4&gt;
+    &lt;p&gt;結局どうするんだよ! というと、あらゆる2項対立のどの極端な点にもどうせ正解はないので、あれこれバランスの取りかたを試しながら、よさそうなやりかたを模索するしかないのだろう。&lt;br /&gt;
+それでも一番大切なことがあるとすれば、こういったことを絶えず検討しなおすべきだということ、他の開発者とコミュニケーションをとることを絶対に拒絶すべきでないということ、くらいかもしれない。&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-92554d57&quot; name=&quot;f-92554d57&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;自分の理解では、t-wadaさんはこういったことを(理想的に)実現する、ということを抽象して「良いソフトウェア設計」と言ったのだと思っている。&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-60481963&quot; name=&quot;f-60481963&quot; class=&quot;footnote-number&quot;&gt;*2&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;ソフトウェアの沈降速度が速くプロダクトの新陳代謝が追い付かなければ全体としてはあまり良くない状態のコードに携わる人数が増え、開発者にとってはストレスフルな状態になる。プロダクトの新陳代謝があまりに早過ぎるサイクルで起きると各々のプロダクトの熟成あるいは&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%E6%A1%BC%A5%B9%A5%B1%A1%BC%A5%B9&quot;&gt;ユースケース&lt;/a&gt;の充実が全く行われず、ユーザにとってはリスキーすぎるコミュニティになるだろう。&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-533d9abd&quot; name=&quot;f-533d9abd&quot; class=&quot;footnote-number&quot;&gt;*3&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;時折ネット上のニュースを騒がせることもあるけれど&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Mon, 31 Aug 2015 10:10:25 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/6653458415119424915</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>YAPC::Asia Tokyo 2015 にいってきた＆しゃべってきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/08/23/160337</link>          <description>&lt;p&gt;毎年おなじみの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;::Asia Tokyo 2015が今年も行われたので参加した。いやー、たのしかった。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://yapcasia.org/2015/&quot;&gt;YAPC::Asia Tokyo 2015&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;しゃべってきた&lt;/h4&gt;
+    &lt;p&gt;Talk proposalは出してあって、acceptされたというので話してきた。前夜祭。ビール飲みながら発表ができるぞ! ということで、内容はガチでコードの話というよりはもうちょっとだけふわっとした気分で、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;をどう開発するか、それをどう継続して広げていくか、みたいな話。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/3Q3IdJJc6HDWfW&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/how-to-createimprove-oss-products-and-its-community&quot; title=&quot;How to create/improve OSS products and its community&quot; target=&quot;_blank&quot;&gt;How to create/improve OSS products and its community&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;枠は前夜祭……と思ったら、前夜祭のところにはRejectconと書いてあって、えっそうなの、みたいな感じ。まあいいけど&lt;a href=&quot;#f-1f8f72c3&quot; name=&quot;fn-1f8f72c3&quot; title=&quot;ベストトーク賞の対象外だったのはちょっと悲しかった。ハム……。&quot;&gt;*1&lt;/a&gt;。思ったよりだいぶ多くの方に聞いてもらえてよかったです。満席になって立ち見も出てた。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://togetter.com/li/863136&quot;&gt;&amp;#x30A6;&amp;#x30B1;&amp;#x308B;OSS&amp;#x306E;&amp;#x4F5C;&amp;#x308A;&amp;#x65B9;&amp;#x3001;&amp;#x305D;&amp;#x3057;&amp;#x3066;&amp;#x30B3;&amp;#x30DF;&amp;#x30E5;&amp;#x30CB;&amp;#x30C6;&amp;#x30A3;&amp;#x3092;&amp;#x76DB;&amp;#x308A;&amp;#x4E0A;&amp;#x3052;&amp;#x308B;&amp;#x65B9;&amp;#x6CD5;&amp;#xFF01; YAPC&amp;#x30E2;&amp;#x30EA;&amp;#x30B9;&amp;#x30C8;&amp;#x30FC;&amp;#x30AF; #yapcasia #yapcasiaD - Togetter&amp;#x307E;&amp;#x3068;&amp;#x3081;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;スライド以外に口でしゃべったこともあるし、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%BC%C1%B5%BF%B1%FE%C5%FA&quot;&gt;質疑応答&lt;/a&gt;も非常に濃い状態になっていたと思うので、気になる人は動画を見てみてほしい。&lt;/p&gt;&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/50zhxtwvMJk&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;&lt;p&gt;あとでTLを遡ってみたところ、けっこう評判よかったようで安心した。していたら、こんな反応エントリも出てきた。うわお。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;http://t-wada.hatenablog.jp/embed/active-oss-development-vs-simplicity&quot; title=&quot;OSS開発の活発さの維持と良いソフトウェア設計の間には緊張関係があるのだろうか? - t-wadaのブログ&quot; class=&quot;embed-card embed-blogcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;a href=&quot;http://t-wada.hatenablog.jp/entry/active-oss-development-vs-simplicity&quot;&gt;OSS開発の活発さの維持と良いソフトウェア設計の間には緊張関係があるのだろうか? - t-wadaのブログ&lt;/a&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://t-wada.hatenablog.jp/entry/active-oss-development-vs-simplicity&quot;&gt;t-wada.hatenablog.jp&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;@t_wada さんや @hsbt さんとはカンファレンス期間中などにも(他の人も含めて)いろいろ話した。この話題は長くなるので、別エントリに分けて書く。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;いってきた&lt;/h4&gt;
+    &lt;p&gt;毎年様々な人から聞く「&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;の同窓会感がすごい」っていうやつ、これまでは色々な人と会えるしすごいなーと思う程度だったんだけど、今年行くと前職の同僚とかがいっぱいいて、あっこれ同窓会だ! ってなってた。&lt;/p&gt;&lt;p&gt;同時に今年は他言語なんかのコミュニティ・カンファレンスの知り合いも本当に多く来ていて、あらゆるところであらゆるところからの知り合いに会った。この何でもアリという感じはすごい……というか、あらゆる&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%B8%C0%B8%EC&quot;&gt;プログラミング言語&lt;/a&gt;・あらゆる問題意識の開発者が集まってきてやるカンファレンスはこれしかないのかもしれない。&lt;/p&gt;&lt;p&gt;会場が&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D3%A5%C3%A5%B0%A5%B5%A5%A4%A5%C8&quot;&gt;ビッグサイト&lt;/a&gt;になったのもあってスペース全体の問題は去年に較べればはるかに改善されてた。ただトークによっては(というか結構な数のトークが)満員になっていて、満員だからもう入れない、というのもけっこうあった。話す側としては満員になってるとモチベーション高く話しやすいのは確かだけど。&lt;br /&gt;
+ということで、いくつか特に気になるトークはちゃんと聞きつつ、あとは適当に会場内をふらふらして知り合いと話したりもしてた。わいわい。コーヒースペースが本当にすばらしかった。&lt;/p&gt;&lt;p&gt;今年で&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/JPA&quot;&gt;JPA&lt;/a&gt;主催という形で行われるこのイベントは最後(来年は無い)とのことなので残念ではあるが、どんな&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%B0%A5%E9%A5%DE&quot;&gt;プログラマ&lt;/a&gt;でも来られるカンファレンスというのが&lt;a href=&quot;http://builderscon.io/&quot;&gt;Beacon&lt;/a&gt;なのかな、という気がする。&lt;br /&gt;
+まあなんだかんだいって&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/YAPC&quot;&gt;YAPC&lt;/a&gt;::Asia Tokyoは&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Perl&quot;&gt;Perl&lt;/a&gt;という枠で収めず大きくなり続けていったので、それをいったんリセットして、誰でも来られるカンファレンスと、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Perl&quot;&gt;Perl&lt;/a&gt;に集中したもうすこし小さいカンファレンス&lt;a href=&quot;#f-0b064a3c&quot; name=&quot;fn-0b064a3c&quot; title=&quot;それを誰が主催するかはともかく&quot;&gt;*2&lt;/a&gt;に分ける、というのは悪くないア&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A4%A5%C7%A5%A2&quot;&gt;イデア&lt;/a&gt;だと思う。&lt;/p&gt;&lt;p&gt;何にしろ、いいヤップシーだった。主催者、スタッフ、スピーカー、参加者のみなさま、おつかれさまでした。またね!&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-1f8f72c3&quot; name=&quot;f-1f8f72c3&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;ベストトーク賞の対象外だったのはちょっと悲しかった。ハム……。&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-0b064a3c&quot; name=&quot;f-0b064a3c&quot; class=&quot;footnote-number&quot;&gt;*2&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;それを誰が主催するかはともかく&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Sun, 23 Aug 2015 16:03:37 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450106664094</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>JRubyConf.EU と Eurucamp に行ってきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/08/20/133339</link>          <description>&lt;p&gt;JRubyConf.EU 2015 のCFPにsubmitしたproposalが通ったので&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%DD%A5%C4%A5%C0%A5%E0&quot;&gt;ポツダム&lt;/a&gt;に行ってきた。……のは7月末〜8月頭にかけてだったのでもう2週間以上経ってしまった。反省。&lt;br /&gt;
+&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%DD%A5%C4%A5%C0%A5%E0&quot;&gt;ポツダム&lt;/a&gt;は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C9%A5%A4%A5%C4%CB%CC%C5%EC%C9%F4&quot;&gt;ドイツ北東部&lt;/a&gt;、ベルリンのすぐ隣の街。人生で最も遠くへの旅になった。旅費はTreasure Dataに出してもらった。ありがたい。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://40.media.tumblr.com/a71c888ce9c180df473de710efc7a237/tumblr_ntbbol51W11s76egdo2_400.jpg&quot; class=&quot;http-image&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://40.media.tumblr.com/a71c888ce9c180df473de710efc7a237/tumblr_ntbbol51W11s76egdo2_400.jpg&quot; class=&quot;http-image&quot; alt=&quot;http://40.media.tumblr.com/a71c888ce9c180df473de710efc7a237/tumblr_ntbbol51W11s76egdo2_400.jpg&quot;&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;すごくよくオーガナイズされたカンファレンスで、主催者にはあれこれ親切にしてもらって、滞在中は不便なことは皆無だった。ぐれーと。&lt;/p&gt;&lt;p&gt;話したスライドはこちら。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/JRuby&quot;&gt;JRuby&lt;/a&gt;を&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Java&quot;&gt;Java&lt;/a&gt;なソフトウェアの上に&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%E9%A5%B0%A5%A4%A5%F3&quot;&gt;プラグイン&lt;/a&gt;層を作るために使うと良いよ、という話。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/8eaG61Re4Py1Vb&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/jruby-with-java-code-in-data-processing-world&quot; title=&quot;JRuby with Java Code in Data Processing World&quot; target=&quot;_blank&quot;&gt;JRuby with Java Code in Data Processing World&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;JRubyConf.EU は Eurucamp という別の&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;コミュニティのカンファレンスのイベント内イベントという感じ。なのでJRubyConfには参加せずEurucampのみの参加という人もすごく多くて、スピーカーとしての立場が使えない英会話を行わざるをえなかった。なけなしの英会話力をふりしぼっている側にはけっこうきつい。今回は日本から行ったのは自分だけだったので、途中で&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B3%A5%DF%A5%E5%CE%CF&quot;&gt;コミュ力&lt;/a&gt;を使い果たしてカンファレンス最終日はほとんどくたばっていた。Eurucampはコードよりはかなりコミュニティ側に寄った内容のトークばかりだったというのも、まあ、あるかなあ。参加者の人に聞いたらこのカンファレンスが特徴的にそうらしいけど。&lt;/p&gt;&lt;p&gt;話した中ではやはり日本は遠い……ということでTDもFluentdもあまり知られていない。けど話すとそれはいいね! みたいにわかってはもらえる。もっと人の行き来が増えるといいなー、というか、もっと向こう行って話さないとな、というところ。遠いんだけどねえ。&lt;br /&gt;
+LogStashの開発者と話せたりというあれこれはあった。日本に長いこと住んでいたドイツ人の人とか、日本の企業でリモートで働いているベルリン在住の人とかとも話せて、いやはや世界は広いのか狭いのか。貴重な経験だった。&lt;/p&gt;&lt;p&gt;ということで面白かったんだけど、次は10月にEuruko 2015が&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%AA%A1%BC%A5%B9%A5%C8%A5%EA%A5%A2&quot;&gt;オーストリア&lt;/a&gt;の&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B6%A5%EB%A5%C4%A5%D6%A5%EB%A5%B0&quot;&gt;ザルツブルグ&lt;/a&gt;であって、こっちも通っているので、また話しに行くのでした。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2Fwww.euruko2015.org%2F&quot; title=&quot;EuRuKo 2015&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;a href=&quot;http://www.euruko2015.org/&quot;&gt;EuRuKo 2015&lt;/a&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://www.euruko2015.org/&quot;&gt;www.euruko2015.org&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+</description>          <pubDate>Thu, 20 Aug 2015 13:33:39 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450106273689</guid>
+          
+          <enclosure url="http://40.media.tumblr.com/a71c888ce9c180df473de710efc7a237/tumblr_ntbbol51W11s76egdo2_400.jpg" type="image/jpeg" length="0" />
+        </item>
+      
+        <item>
+          <title>Docker 1.8 に Fluentd logging driver が入りました</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/08/20/120425</link>          <description>&lt;p&gt;&lt;a href=&quot;http://tagomoris.hatenablog.com/entry/2015/06/05/123342&quot;&gt;&amp;#x4EE5;&amp;#x524D;&amp;#x306B;&amp;#x66F8;&amp;#x3044;&amp;#x305F;&amp;#x8A71;&lt;/a&gt;の続きなんだけど、Docker 1.8が出た。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2Fblog.docker.com%2F2015%2F08%2Fdocker-1-8-content-trust-toolbox-registry-orchestration%2F&quot; title=&quot;Announcing Docker 1.8: Content Trust, Toolbox, and Updates to Registry and Orchestration&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;a href=&quot;http://blog.docker.com/2015/08/docker-1-8-content-trust-toolbox-registry-orchestration/&quot;&gt;Announcing Docker 1.8: Content Trust, Toolbox, and Updates to Registry and Orchestration&lt;/a&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://blog.docker.com/2015/08/docker-1-8-content-trust-toolbox-registry-orchestration/&quot;&gt;blog.docker.com&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;で、それに Fluentd logging driver が入っている。これで Docker container で起動したプロセスのSTDOUTやSTDERRを直接Fluentdに向けて投げることが可能になった。Dockerにpull-reqを送ったのは初めてだったんだけど、無事マージされてリリースまでこぎつけたので、本当に出たときはほっとした。途中だいぶ大変だったので……。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://blog.treasuredata.com/blog/2015/07/07/collecting-docker-logs-with-fluentd/&quot;&gt;Collecting All Docker Logs with Fluentd | Treasure Data Blog&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://blog.treasuredata.com/blog/2015/08/03/5-use-cases-docker-fluentd/&quot;&gt;5 Use Cases Enabled by Docker 1.8&amp;rsquo;s Fluentd Logging Driver | Treasure Data Blog&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Treasure Data blogで既にいくつかエントリが出てる。あと既に試したりしてる人もいるよう。すごい。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2Fdev.classmethod.jp%2Fcloud%2Fdocker-fluentd-logging-driver%2F&quot; title=&quot;DockerのFluentd Logging Driverを試してみる | Developers.IO&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;a href=&quot;http://dev.classmethod.jp/cloud/docker-fluentd-logging-driver/&quot;&gt;DockerのFluentd Logging Driverを試してみる | Developers.IO&lt;/a&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://dev.classmethod.jp/cloud/docker-fluentd-logging-driver/&quot;&gt;dev.classmethod.jp&lt;/a&gt;&lt;/cite&gt;&lt;br /&gt;
+&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2Fqiita.com%2Fkumatch%2Fitems%2F744076da68fa71b36a35&quot; title=&quot;Docker 1.8 の Fluentd logging driver でコンテナログをフォワードする - Qiita&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;a href=&quot;http://qiita.com/kumatch/items/744076da68fa71b36a35&quot;&gt;Docker 1.8 の Fluentd logging driver でコンテナログをフォワードする - Qiita&lt;/a&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://qiita.com/kumatch/items/744076da68fa71b36a35&quot;&gt;qiita.com&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;概要などについては以下のスライドがわかりやすい。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/GzTSGYBtsCyhKU&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/repeatedly/docker-and-fluentd-51821582&quot; title=&quot;Docker and Fluentd&quot; target=&quot;_blank&quot;&gt;Docker and Fluentd&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/repeatedly&quot; target=&quot;_blank&quot;&gt;N Masahiro&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;ということで、Dockerもだいぶ便利になりました! Enjoy Logging!&lt;/p&gt;
+</description>          <pubDate>Thu, 20 Aug 2015 12:04:25 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450106267125</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>YAPC::Asia前夜祭でOSS開発者としての話をします</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/08/18/110013</link>          <description>&lt;p&gt;&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2Fyapcasia.org%2F2015%2Ftalk%2Fshow%2F5f5cad74-004a-11e5-acf4-89c77d574c3a&quot; title=&quot;我々にできるOSSとそのコミュニティの育てかた - YAPC::Asia Tokyo 2015&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;a href=&quot;http://yapcasia.org/2015/talk/show/5f5cad74-004a-11e5-acf4-89c77d574c3a&quot;&gt;我々にできるOSSとそのコミュニティの育てかた - YAPC::Asia Tokyo 2015&lt;/a&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://yapcasia.org/2015/talk/show/5f5cad74-004a-11e5-acf4-89c77d574c3a&quot;&gt;yapcasia.org&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;自分で&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/OSS&quot;&gt;OSS&lt;/a&gt;を公開していると、ああしておけばよかった、なぜこうならないのか、なぜあのソフトウェアは……などと考えてしまうことも無くはないと思います。また広く使ってほしいのに残念ながらあまりそうならないケースも多く存在します。&lt;br /&gt;
+このセッションではそういった悩ましい、けどあまりきちんと議論されてもこなかった諸問題について、あれこれと現実的な話をしてみたいと思います。&lt;/p&gt;&lt;p&gt;ということでみんな来てね! 前夜祭だよ! 木曜夜からぼくと&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C5%EC%B5%FE%A5%D3%A5%C3%A5%B0%A5%B5%A5%A4%A5%C8&quot;&gt;東京ビッグサイト&lt;/a&gt;であくしゅ!&lt;/p&gt;
+</description>          <pubDate>Tue, 18 Aug 2015 11:00:13 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450106019319</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>俺の考えるISUCON</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/07/10/131140</link>          <description>&lt;p&gt;ISUCONというイベントがある。要するに技術コンテストイベントだ。領域はWebアプリケーションにかかわる全てといってよい。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2Fisucon.net%2F&quot; title=&quot;ISUCON公式Blog&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;a href=&quot;http://isucon.net/&quot;&gt;ISUCON公式Blog&lt;/a&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://isucon.net/&quot;&gt;isucon.net&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;これがなんなのか、そろそろ一発説明しておくか、という気分にちょっとなったので書く。実は何を隠すこともなく次の出題者なのでいかに出題内容にひっかからないように書くかがちょっと大変かもしれないが、どうせ出題内容とかまだ確定しているわけでもないので、いいや。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;ISUCONとは何か&lt;/h4&gt;
+    &lt;p&gt;ある日の朝、Webアプリケーションが一式、適当に設定されたサーバごと渡されます。あと&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D9%A5%F3%A5%C1%A5%DE%A1%BC%A5%AF&quot;&gt;ベンチマーク&lt;/a&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C4%A1%BC%A5%EB&quot;&gt;ツール&lt;/a&gt;も渡されます。&lt;br /&gt;
+さて夕方までにこの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D9%A5%F3%A5%C1%A5%DE%A1%BC%A5%AF&quot;&gt;ベンチマーク&lt;/a&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C4%A1%BC%A5%EB&quot;&gt;ツール&lt;/a&gt;の計測するスコアを可能な限り上げてください、そのためなら渡されたサーバ上で何をやっても構いません。ただし&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D9%A5%F3%A5%C1%A5%DE%A1%BC%A5%AF&quot;&gt;ベンチマーク&lt;/a&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C4%A1%BC%A5%EB&quot;&gt;ツール&lt;/a&gt;はアプリケーションの動作が変わっていないかどうかチェックするための機構を備えているので、そいつが違反を検出したらスコアは無効です。&lt;/p&gt;&lt;p&gt;これだけです。もちろんコンテストなので詳細は当日朝にレギュレーション文章として渡されます&lt;a href=&quot;#f-d9fe169d&quot; name=&quot;fn-d9fe169d&quot; title=&quot;概要は参加受付時、事前に公開されます&quot;&gt;*1&lt;/a&gt;が、想定外の事態を防ぎたいだけで、内容としては本当に上のものだけです。&lt;/p&gt;&lt;p&gt;世の中一般におけるWebアプリケーションというやつは通常、Webサーバ、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A2%A5%D7%A5%EA%A5%B1%A1%BC%A5%B7%A5%E7%A5%F3%A5%B5%A1%BC%A5%D0&quot;&gt;アプリケーションサーバ&lt;/a&gt;、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A2%A5%D7%A5%EA%A5%B1%A1%BC%A5%B7%A5%E7%A5%F3%A5%B5%A1%BC%A5%D0&quot;&gt;アプリケーションサーバ&lt;/a&gt;上で動作するプログラムコード、およびデータベースから成ります。データベースは多くの場合は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/RDBMS&quot;&gt;RDBMS&lt;/a&gt;ですが、まれにNoSQLオンリーという強烈な構成のものも世の中にはあります。あとキャッシュサーバを追加したりもしますね。&lt;br /&gt;
+ISUCONにおけるWebアプリケーションもだいたいはこういうやつです。学生の頃には自分も&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/RDBMS&quot;&gt;RDBMS&lt;/a&gt;をさわったりはほとんどしなかったけど、お金を稼ぐために&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/RDBMS&quot;&gt;RDBMS&lt;/a&gt;は非常に強力なソフトウェアなので、だいたい働きはじめると使うことになります。&lt;/p&gt;&lt;p&gt;ISUCONにおける「何をやってもいい」というのは本当に何でもよくて、別言語でスクラッチから実装し直そうがサーバソフトウェアの構成を完全に変えようがOSから入れ替えようが、何でもいいです。Webアプリケーションの動作さえ変えなければ。これはそれらしい用語では&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D6%A5%E9%A5%C3%A5%AF%A5%DC%A5%C3%A5%AF%A5%B9%A5%C6%A5%B9%A5%C8&quot;&gt;ブラックボックステスト&lt;/a&gt;とか言ったりします。&lt;br /&gt;
+これは要するに「あなたに全てをぶっこわす権利をあげます」ということです。それで勝てるもんなら勝ってください。それを見てみたい。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;現代のISUCON&lt;/h4&gt;
+    &lt;p&gt;むかしむかし、ISUCONには一人で参加できました。現代のISUCONには一人では参加できません。必ず2人か3人でチームを組む必要があります。なぜか。&lt;br /&gt;
+極めて簡単で、これは1人で勝てるものではない、ということがやってみて明らかになったからです。1人では絶対に勝てません。本当は2人でもつらくて、これまでの優勝チームは漏れなく3人チームですし、上位入賞チームもほとんどが3人です&lt;a href=&quot;#f-de9b27c6&quot; name=&quot;fn-de9b27c6&quot; title=&quot;一度だけ2人チームが準優勝まで行ったことがあります、おそろしいおそろしい。&quot;&gt;*2&lt;/a&gt;。&lt;/p&gt;&lt;p&gt;むかしむかし、ISUCONは先着申し込み順での決勝1日だけのイベントでした。現代のISUCONは予選をリモートで行い、通過者が会場に集まって決勝を行うことになっています。なぜか。&lt;br /&gt;
+最初はこんなコンテストにこんなに参加者が集まるとは思っていなかったからです。が、今となっては70以上のチームが参加&lt;a href=&quot;#f-9ac904ef&quot; name=&quot;fn-9ac904ef&quot; title=&quot;2014年&quot;&gt;*3&lt;/a&gt;するイベントになりました。他に似たようなイベントがなかったのが目新しいからでしょうか。&lt;br /&gt;
+一方会場に集まって決勝をやるスタイルはそのままです。これは単純に、そのほうが盛り上がるからです。イベント後に飲みながらお互い何をやったか話し合うのが、もう、めちゃくちゃに面白いからです。&lt;/p&gt;&lt;p&gt;むかしむかし、ISUCONのWebアプリケーション提供は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Perl&quot;&gt;Perl&lt;/a&gt;, &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;, Node.jsのみで行われました。現代のISUCONでは&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Perl&quot;&gt;Perl&lt;/a&gt;, &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Ruby&quot;&gt;Ruby&lt;/a&gt;, &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/PHP&quot;&gt;PHP&lt;/a&gt;, &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Golang&quot;&gt;Golang&lt;/a&gt;, &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Python&quot;&gt;Python&lt;/a&gt;, &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Java&quot;&gt;Java&lt;/a&gt;, Node.jsなどから、増えたり減ったりしつついくつも提供されています。&lt;br /&gt;
+これは主催者が考えるに、スコアが出せるかどうかは言語の問題ではない、と思うからです。どの言語だろうと勝つ人は勝ちます。速い言語遅い言語で勝負がつくようなつまんない問題は過去一度も出されませんでした。&lt;br /&gt;
+だがしかし、過去4回の優勝チームの使用言語は全て&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Perl&quot;&gt;Perl&lt;/a&gt;でした。今年はどうかな?&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;ISUCONの技術&lt;/h4&gt;
+    &lt;p&gt;ISUCONでは様々な技術が必要とされます。もちろん、ごく基本的なWebアプリケーションを書く能力は真っ先に求められます。いわゆるWeb一般の知識、HTTPやHTML/&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Javascript&quot;&gt;Javascript&lt;/a&gt;/&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/CSS&quot;&gt;CSS&lt;/a&gt;などの基本および応用的な知識も必要でしょう。&lt;/p&gt;&lt;p&gt;性能を出すためには各種&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%DF%A5%C9%A5%EB%A5%A6%A5%A7%A5%A2&quot;&gt;ミドルウェア&lt;/a&gt;を適切に設定する必要もあります。Webサーバ、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A2%A5%D7%A5%EA%A5%B1%A1%BC%A5%B7%A5%E7%A5%F3%A5%B5%A1%BC%A5%D0&quot;&gt;アプリケーションサーバ&lt;/a&gt;、データベース、Key-Value-Storage、OSなどは少なくとも一ヶ所ずつ手を入れることになるでしょう。&lt;br /&gt;
+ISUCON出題者はナンセンスな設定を参加者に押し付けることはありません。最初からそこそこ動く設定はおそらく行われています。しかしスコアを出すためにはそこに安住できないのはもちろんのことです。&lt;/p&gt;&lt;p&gt;ISUCONで勝とうと思ったらアプリケーションの改造を恐れてはいけません。高パフォーマンスなアプリケーションを作るためには、適切なキャッシュの管理、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/RDBMS&quot;&gt;RDBMS&lt;/a&gt;へのクエリの最適化と適切なインデックスの作成、データの持ちかたの変更、その他ありとあらゆる計算量・処理データ量の削減の努力が求められます。&lt;br /&gt;
+それを最適な形で実現するために、アプリケーションコード以外のあらゆる部分の変更の可能性を検討すると同時に、アプリケーションコードの変更を組み合わせることを考えてください。&lt;/p&gt;&lt;p&gt;現代のISUCONはチーム戦です。厳しい制限時間の中で、2人が同じことをやっている余裕はありません。コミュニケーションをとり、お互いを信頼して作業を進めましょう。&lt;br /&gt;
+そしてその結果をお互いにチェックしあいましょう。人間はミスをするものです。ミスを相互にカバーできるのがチームです。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;ISUCONの勝敗&lt;/h4&gt;
+    &lt;p&gt;最終的に、勝敗はつきます。勝敗は大事です。勝つために参加しているのです。&lt;/p&gt;&lt;p&gt;しかし、最も大事なものは勝敗ではありません。決勝なら25以上のチーム、予選なら去年はなんと185ものチームが、同じ時間に、同じ問題に、同じ目的で、最大限集中して取り組んだということが一番大事なことです。&lt;/p&gt;&lt;p&gt;普段我々が手にできない、全く同じ前提条件でのフラットな技術的な議論ができる場が、そこにできるのです。&lt;br /&gt;
+その意味では、ISUCON参加前と参加後に最も多くのものを持ち帰った人こそが勝者と言えるでしょう。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;まとめ&lt;/h4&gt;
+    &lt;p&gt;ISUCONは超面白いので、今年のもたぶん面白くなると思うので、みんな参加したらいいと思う。&lt;/p&gt;&lt;p&gt;とはいえ、普段&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Web%A5%B5%A1%BC%A5%D3%A5%B9&quot;&gt;Webサービス&lt;/a&gt;を開発している人にとっては普段の仕事領域だけど、学生の人達には&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/RDBMS&quot;&gt;RDBMS&lt;/a&gt;なんか触ったこともない、という人もいると思う。まあ機会なけりゃそんなもんだよね。しかし&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/RDBMS&quot;&gt;RDBMS&lt;/a&gt;を使ってみたという経験がこの後に無駄になることは100%ありえないので、ぜひこの機会にやってみてほしい。&lt;/p&gt;&lt;p&gt;ということで機会があります。学生の方はいかがでしょうか。&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=http%3A%2F%2Fisucon.net%2Farchives%2F44708561.html&quot; title=&quot;旅費負担！出場メンバー募集OK！ 学生限定の ISUCON夏期講習 開催のお知らせ : ISUCON公式Blog&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;a href=&quot;http://isucon.net/archives/44708561.html&quot;&gt;旅費負担！出場メンバー募集OK！ 学生限定の ISUCON夏期講習 開催のお知らせ : ISUCON公式Blog&lt;/a&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;http://isucon.net/archives/44708561.html&quot;&gt;isucon.net&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;さー今年のISUCONの問題はどうしよっかなー!&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-d9fe169d&quot; name=&quot;f-d9fe169d&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;概要は参加受付時、事前に公開されます&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-de9b27c6&quot; name=&quot;f-de9b27c6&quot; class=&quot;footnote-number&quot;&gt;*2&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;一度だけ2人チームが準優勝まで行ったことがあります、おそろしいおそろしい。&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-9ac904ef&quot; name=&quot;f-9ac904ef&quot; class=&quot;footnote-number&quot;&gt;*3&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;2014年&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Fri, 10 Jul 2015 13:11:40 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450100943547</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>Hive GenericUDFの挙動がおかしい場合</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/06/29/183221</link>          <description>&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%B9%A5%C8%A5%E9%A5%AF%A5%BF&quot;&gt;コンストラクタ&lt;/a&gt;で初期化処理をやってしまっていないか気をつけよう。&lt;/p&gt;&lt;p&gt;通常 GenericUDF を継承したUDFを実装する場合、初期化処理は initialize &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%E1%A5%BD%A5%C3%A5%C9&quot;&gt;メソッド&lt;/a&gt;内で行う。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%B9%A5%C8%A5%E9%A5%AF%A5%BF&quot;&gt;コンストラクタ&lt;/a&gt;で行ってはいけない。それでも古いほうのHiveのバージョンでは動くケースがあったようだが、Hive 0.13で動かなくなっているケースが出て難儀した。&lt;br /&gt;
+なにしろデータソースによって動いたり動かなかったりする。普通にカラムの入力データを食わせると動かないが、入力データをHiveQLの中で文字列&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%EA%A5%C6%A5%E9%A5%EB&quot;&gt;リテラル&lt;/a&gt;で与えると動いたりして地獄だった。動かないというのもエラーになるとかじゃなくて、なんかありえない挙動を示す。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C0%B5%B5%AC%C9%BD%B8%BD&quot;&gt;正規表現&lt;/a&gt;マッチのグルーピングが本来の挙動に対してひとつズレた結果が返ってくるとか。&lt;/p&gt;&lt;p&gt;詳しくはそこまで調べてないのであまり書くと嘘になってしまうが、どうもUDFの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%B9%A5%BF%A5%F3%A5%B9&quot;&gt;インスタンス&lt;/a&gt;を生成するタイミングと、それを実際に各Task内でinitializeするタイミングが異なるせいではないか、そしてその間に何らかの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B7%A5%EA%A5%A2%A5%E9%A5%A4%A5%BA&quot;&gt;シリアライズ&lt;/a&gt;・デ&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B7%A5%EA%A5%A2%A5%E9%A5%A4%A5%BA&quot;&gt;シリアライズ&lt;/a&gt;が挟まってるのではないか、という感じ。Serializableでない内部状態を&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%B9%A5%C8%A5%E9%A5%AF%A5%BF&quot;&gt;コンストラクタ&lt;/a&gt;内で作ってしまうと、それが再現できずに(あるいは中途半端に再現されて)以降の処理がおかしいことになる。&lt;/p&gt;&lt;p&gt;ということで、GenericUDFを継承したUDFを作るとき、初期化処理は initialize() &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%E1%A5%BD%A5%C3%A5%C9&quot;&gt;メソッド&lt;/a&gt;内でやりましょう。&lt;/p&gt;&lt;p&gt;なおUDFを継承したUDFを作るとき(ややこしいな!)は、その&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B3%A5%F3%A5%B9%A5%C8%A5%E9%A5%AF%A5%BF&quot;&gt;コンストラクタ&lt;/a&gt;は実際にはGenericUDFのinitialize()から呼ばれるので、使ってよい、ということでした。&lt;a href=&quot;http://blog.hatena.ne.jp/myui/&quot;&gt;id:myui&lt;/a&gt; さんに教えてもらった。詳しい人がそのへんに座ってるの超便利……!&lt;/p&gt;
+</description>          <pubDate>Mon, 29 Jun 2015 18:32:21 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450099378611</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>Hadoop MapReduceのプロファイルをとる</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/06/25/133852</link>          <description>&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Hadoop&quot;&gt;Hadoop&lt;/a&gt; &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/MapReduce&quot;&gt;MapReduce&lt;/a&gt;のジョブは各スレーブノード上で1タスクごとに&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/JVM&quot;&gt;JVM&lt;/a&gt;が1プロセス起動する形で実行される。&lt;br /&gt;
+で、それらのアプリケーションのプロファイルをとりたい場合、各々の&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/JVM&quot;&gt;JVM&lt;/a&gt;ごとにとることになる。これにはhprofを使う。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html#Profiling&quot;&gt;Apache Hadoop 2.7.0 &amp;ndash; MapReduce Tutorial&lt;/a&gt;&lt;/p&gt;&lt;p&gt;この記述に従って以下のプロパティをセットする。ジョブ起動時に指定すれば有効にできる。プロファイラのパラメータはデフォルトがあるという話だったけど、やってみたら指定しないとエラーになった。以下の指定は自分が試したとき用にいじってある。&lt;/p&gt;
+&lt;pre class=&quot;code&quot; data-lang=&quot;&quot; data-unlink&gt;mapreduce.task.profile=true
+mapreduce.task.profile.params=-agentlib:hprof=depth=4,interval=100,cutoff=0.001,cpu=samples,heap=sites,force=n,thread=n,verbose=n,file=%s
+
+# MRv1の場合は mapred.task.profile などとする&lt;/pre&gt;&lt;p&gt;プロファイラのオプション指定については&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Oracle&quot;&gt;Oracle&lt;/a&gt; &lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Java&quot;&gt;Java&lt;/a&gt; SE doucumentを見ればいいのかなと思うけど、なんかいまいち詳しくない。自分が設定する分には&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/IBM&quot;&gt;IBM&lt;/a&gt;のサイトの日本語解説が役にたった。&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/IBM&quot;&gt;IBM&lt;/a&gt;のやつと&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Oracle&quot;&gt;Oracle&lt;/a&gt;ので違いがあるかもしれないけど、特に気付かなかった。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://docs.oracle.com/javase/7/docs/technotes/samples/hprof.html&quot;&gt;HPROF: A Heap/CPU Profiling Tool&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www-01.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.lnx.71.doc/diag/tools/hprof.html&quot;&gt;IBM Knowledge Center HPROF &amp;#x30D7;&amp;#x30ED;&amp;#x30D5;&amp;#x30A1;&amp;#x30A4;&amp;#x30E9;&amp;#x30FC;&amp;#x306E;&amp;#x4F7F;&amp;#x7528;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;このオプションを有効にしてジョブを実行すると、ジョブ終了時(正確にはプロファイラを有効にしたtaskの終了時)に profile.out が生成され、そこにプロファイル結果が出力される。これはJobHistoryServerもしくはJobTrackerのWeb UIから該当のattempt(もしくはtask)を選んで&lt;a href=&quot;#f-efa8a7cd&quot; name=&quot;fn-efa8a7cd&quot; title=&quot;プロファイラが有効になっているものは明らかに実行時間が長くなるからすぐにわかる&quot;&gt;*1&lt;/a&gt;、そのログを見れば見られる。いちいち&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/HDFS&quot;&gt;HDFS&lt;/a&gt;やローカル&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D5%A5%A1%A5%A4%A5%EB%A5%B7%A5%B9%A5%C6%A5%E0&quot;&gt;ファイルシステム&lt;/a&gt;に見にいかなくてもいいのは便利。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;YARN MRv2での問題&lt;/h4&gt;
+    &lt;p&gt;MRv1ならこれだけで一発で結果が得られるんだけど、YARN + MRv2で実行しているとこの結果がちゃんと出てこない。起動時のバナーだけ見られたり、あるいはプロファイル結果の出力が途中でブチ切れた状態になっていたりする。&lt;br /&gt;
+これはhprofの結果出力が&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/JVM&quot;&gt;JVM&lt;/a&gt;がTERMシグナルを受け取って働く終了処理の中で行われるからだ。んでYARNはTERMを送ったら250msだけ待って終了していないとすぐKILLを送る。ので、プロファイラの結果出力の最中で&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/JVM&quot;&gt;JVM&lt;/a&gt;がKILLられて結果出力がちゃんと得られない、ということになる。&lt;/p&gt;&lt;p&gt;この問題については&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Apache&quot;&gt;Apache&lt;/a&gt; JIRAにissueがある。Resolvedになっているが該当バージョンは 2.8.0 だ!&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://issues.apache.org/jira/browse/MAPREDUCE-5465&quot;&gt;[MAPREDUCE-5465] Tasks are often killed before they exit on their own - ASF JIRA&lt;/a&gt;&lt;/p&gt;&lt;p&gt;2.8.0 を待っているわけにはいかないので、どうにか設定をいじってattemptのコンテナがKILLられてしまうまで猶予を作ってみる。これは各スレーブノードで設定して NodeManager を再起動する。&lt;/p&gt;
+&lt;pre class=&quot;code lang-xml&quot; data-lang=&quot;xml&quot; data-unlink&gt;  &lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;property&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;yarn.nodemanager.process-kill-wait.ms&lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt;30000&lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;property&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;name&amp;gt;&lt;/span&gt;yarn.nodemanager.sleep-delay-before-sigkill.ms&lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt;30000&lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;synIdentifier&quot;&gt;&amp;lt;/property&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;ジョブのConfigurationを見てもこの変更が反映されていなくてアレっと思ったが、試してみた限りでは想定通りに動いているようだ。ちゃんとプロファイル結果が最後まで出力されるようになった。&lt;br /&gt;
+何か副作用があるかどうかというと、もしかして特定の条件で30秒間だけ長く生き残ってしまうattempt containerが出てしまうかもしれないけど……まあ、特に問題でもないでしょう。&lt;/p&gt;&lt;p&gt;めでたしめでたし。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;まとめ&lt;/h4&gt;
+    &lt;p&gt;Enjoy profiling!&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-efa8a7cd&quot; name=&quot;f-efa8a7cd&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;プロファイラが有効になっているものは明らかに実行時間が長くなるからすぐにわかる&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Thu, 25 Jun 2015 13:38:52 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450098892826</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>&quot;Docker and Fluentd&quot;の話をした</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/06/05/123342</link>          <description>&lt;p&gt;Fluentd meetup と Gophers and Docker-users beer social というのが連続であって、それぞれでほぼ同じ話をした。……んだけど参加者層が違うからまあいいかなと。あと後者は英語だった。いまだに英語でしゃべるのはだいぶ疲れる。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://eventdots.jp/event/495315&quot;&gt;&amp;#x3010;&amp;#x30EC;&amp;#x30DD;&amp;#x30FC;&amp;#x30C8;&amp;#x3042;&amp;#x308A;&amp;#x3011;Fluentd Meetup 2015 &amp;#x590F; - 2015/06/01(&amp;#x6708;) - dots.[&amp;#x30C9;&amp;#x30C3;&amp;#x30C4;]&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.meetup.com/Docker-Tokyo/events/222928136/&quot;&gt;Gophers &amp;amp; Docker-users Beer Social - Docker Tokyo (Tokyo) - Meetup&lt;/a&gt;&lt;/p&gt;&lt;p&gt;資料はこれ。2回目にやるときにFluentd知らない人がけっこういそうだったのでそのあたりを足してあるくらい。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/g6iAujoVBrTg4e&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/docker-and-fluentd-revised&quot; title=&quot;Docker and Fluentd (revised)&quot; target=&quot;_blank&quot;&gt;Docker and Fluentd (revised)&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;Dockerを使ってアプリケーションをデプロイするときにログの収集に気をつけないといけないんだけど、そもそもその構成を設計するときにどういうパターンが考えられるんだっけとか、それをFluentdでやるとしたらどのような設計を選択できるんだっけとか、そういうことを話題にしている。&lt;/p&gt;&lt;p&gt;そのバリエーションとして、いまpull-reqを&lt;a href=&quot;https://github.com/docker/docker/pull/12876&quot;&gt;&amp;#x51FA;&amp;#x3057;&amp;#x3066;&amp;#x3044;&amp;#x308B;&lt;/a&gt; Fluentd logging driver を使えるようになるといいんだけどね、という話をしていた。あとそろそろ公式の Docker image を作ったらいいのかなあと思ったので、それを出した話も書いてある。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;ところで&lt;/h4&gt;
+    &lt;p&gt;上述 pull-req はめでたく code review status に進んだので、これと document review が済めばマージされると思う。だいぶ長いことステータスが変わらなかったのが不安でアレだったけど、今ではちょっと安心している。&lt;/p&gt;&lt;p&gt;あと Fluentd meetup の段階では DockerHub でユーザ名がとれてなくてね、という話をしたけど、その後にめでたくユーザ名 tagomoris も organization name fluent も(ついでに fluentd も)とれた。めでたしめでたし。ということでスライド中にURLなどはアップデートしてある。&lt;/p&gt;
+
+&lt;/div&gt;</description>          <pubDate>Fri, 05 Jun 2015 12:33:42 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450096529920</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>#norikra meetup 2 をやってきた</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/06/04/112424</link>          <description>&lt;p&gt;&lt;iframe src=&quot;//hatenablog-parts.com/embed?url=https%3A%2F%2Fatnd.org%2Fevents%2F65969&quot; title=&quot;Norikra meetup #2 : ATND&quot; class=&quot;embed-card embed-webcard&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; style=&quot;display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;&quot;&gt;&lt;a href=&quot;https://atnd.org/events/65969&quot;&gt;Norikra meetup #2 : ATND&lt;/a&gt;&lt;/iframe&gt;&lt;cite class=&quot;hatena-citation&quot;&gt;&lt;a href=&quot;https://atnd.org/events/65969&quot;&gt;atnd.org&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;&lt;p&gt;いつもながら会場を :&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/DeNA&quot;&gt;DeNA&lt;/a&gt; さんに提供していただいて開催できました。本当にありがとうございます。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://tagomoris.tumblr.com/post/120659800373/norikra-meetup-2&quot;&gt;tagomoris in English &amp;mdash; Norikra meetup #2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;こっちにも書いたので細かいことは省きますが、今回も100名近く? の人に集まっていただいて、今後の機能どうするかなあとか、実運用こうやってるんだなあとか、一人で開発していると得られない本当に様々なフィードバックをもらえました。ありがとうございます。&lt;/p&gt;&lt;p&gt;&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/lszLp9u3VVhGvr&quot; width=&quot;425&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/tagomoris/norikra-recent-updates&quot; title=&quot;Norikra Recent Updates&quot; target=&quot;_blank&quot;&gt;Norikra Recent Updates&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/tagomoris&quot; target=&quot;_blank&quot;&gt;SATOSHI TAGOMORI&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;&lt;p&gt;自分のスライドはこちらで、最近のアップデートで入った機能などについて話しました。NULLABLEとかは便利だと思いますし、Listener pluginについては簡単なコードで劇的に&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%A2%A1%BC%A5%AD%A5%C6%A5%AF%A5%C1%A5%E3&quot;&gt;アーキテクチャ&lt;/a&gt;が変わる可能性があるので、ぜひ試してみてもらいたいです。&lt;/p&gt;&lt;p&gt;またNorikraは普通に開発を継続していますので、ここが使いづらいとかこの機能が必要だとかあったら、ぜひ issue にお寄せください。みなさんの要望はたぶん一人だけのものではなく、割とみんな欲しいものである可能性が高いです。よろしくおねがいします。&lt;/p&gt;&lt;p&gt;まとめると、今回も楽しかったな!&lt;/p&gt;
+</description>          <pubDate>Thu, 04 Jun 2015 11:24:24 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450096410287</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>ソフトウェア技術についてのスライドは英語で書こうぜの話</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/06/01/210425</link>          <description>&lt;p&gt;それだけで潜在読者が軽く10倍以上になるし、自分で英語書く練習にもなるし、1枚のスライドに大量の日本語を書いてしまって見にくくするのも避けられるし、いいことづくめだよ。&lt;/p&gt;&lt;p&gt;まじで。&lt;/p&gt;
+</description>          <pubDate>Mon, 01 Jun 2015 21:04:25 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450096103130</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>fluent-plugin-secure-forwardの脆弱性とアップデートのお知らせ</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/05/28/182245</link>          <description>&lt;p&gt;(追記 5/29 13:15)&lt;br /&gt;
+この更新の際、設定ファイルの shared_key についても変更されることをお勧めします。また変更をいくつか追加した v0.3.2 をリリースしましたので、このバージョンをお使いください。&lt;/p&gt;&lt;p&gt;これは v0.2.x を使用していたときに shared_key_digest を(あるいはshared_keyそのものを)攻撃者に入手されていた場合、認証情報をリプレイ送信されることで攻撃者が input plugin に接続できてしまう可能性があるためです。&lt;br /&gt;
+深刻度は高くありませんが、念のため shared_key の変更をお勧めします。&lt;br /&gt;
+また v0.3.2 は認証&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D7%A5%ED%A5%C8%A5%B3%A5%EB&quot;&gt;プロトコル&lt;/a&gt;に input plugin から送信するナンスをひとつ増やし、この種の攻撃可能性を排除するための変更を含んでいます。&lt;br /&gt;
+(追記ここまで)&lt;/p&gt;&lt;p&gt;fluent-plugin-secure-forward v0.3.0 をリリースしました。これは v0.2.x およびそれ以前の全てのバージョンに存在する&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C0%C8%BC%E5%C0%AD&quot;&gt;脆弱性&lt;/a&gt;に対処するためのものです。&lt;br /&gt;
+古いバージョンは&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/SSL&quot;&gt;SSL&lt;/a&gt;の扱いに問題があり、中間者攻撃が可能な&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C0%C8%BC%E5%C0%AD&quot;&gt;脆弱性&lt;/a&gt;がありました。これを利用すると output plugin から送信されるデータの取得および改竄が可能となります。安全な通信を目的とする場合は必ず fluent-plugin-secure-forward を v0.3.0 にアップデートし、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B5%A1%BC%A5%D0%BE%DA%CC%C0%BD%F1&quot;&gt;サーバ証明書&lt;/a&gt;、もしくはプライベートCAを用いるいずれかの方法に設定を変更してください。&lt;/p&gt;&lt;p&gt;なお、いずれの方法でも新しく追加された secure オプションの設定を記述する必要があります。これを含めて設定パラメータに一部互換性がなくなっているため、アップデート時には設定ファイルを更新しなければ Fluentd が起動に失敗することに注意してください。&lt;/p&gt;&lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C0%C8%BC%E5%C0%AD&quot;&gt;脆弱性&lt;/a&gt;に関して報告をいただいたことがこの修正に直接のきっかけになりました。ありがとうございました。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;パブリックCAから発行された&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B5%A1%BC%A5%D0%BE%DA%CC%C0%BD%F1&quot;&gt;サーバ証明書&lt;/a&gt;を用いる&lt;/h4&gt;
+    &lt;p&gt;適当な&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C9%A5%E1%A5%A4%A5%F3&quot;&gt;ドメイン&lt;/a&gt;およびその&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C9%A5%E1%A5%A4%A5%F3&quot;&gt;ドメイン&lt;/a&gt;の&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/FQDN&quot;&gt;FQDN&lt;/a&gt;を用いた&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B5%A1%BC%A5%D0%BE%DA%CC%C0%BD%F1&quot;&gt;サーバ証明書&lt;/a&gt;を用意できる場合は、それを input plugin で設定して用いることができます。&lt;a href=&quot;#f-91c4e78f&quot; name=&quot;fn-91c4e78f&quot; title=&quot;が、この場合に output plugin 側で適切なルート証明書のセットを指定する方法を作り忘れていたことに気付きました。あとで再度アップデートします。&quot;&gt;*1&lt;/a&gt;&lt;br /&gt;
+ただしパブリックCAから発行された証明書を用いる場合、output plugin側で&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/FQDN&quot;&gt;FQDN&lt;/a&gt;の検証が必要です。これを enable_strict_verification パラメータで有効にしてください。無効では起動できません。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/tagomoris/fluent-plugin-secure-forward#using-ssl-certificates-issued-from-trusted-ca&quot;&gt;https://github.com/tagomoris/fluent-plugin-secure-forward#using-ssl-certificates-issued-from-trusted-ca&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;プライベートCA証明書を作成して用いる&lt;/h4&gt;
+    &lt;p&gt;&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B5%A1%BC%A5%D0%BE%DA%CC%C0%BD%F1&quot;&gt;サーバ証明書&lt;/a&gt;や適当な&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%C9%A5%E1%A5%A4%A5%F3&quot;&gt;ドメイン&lt;/a&gt;名などを設定して用いるのが難しい場合には fluent-plugin-secure-forward 専用のプライベートCA証明書と&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C8%EB%CC%A9%B8%B0&quot;&gt;秘密鍵&lt;/a&gt;を作成して用いることができます。v0.3.0 はそのためのユーティリティ secure-forward-ca-generate を同梱しています。&lt;br /&gt;
+この方法による場合、プライベートCAの証明書および&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C8%EB%CC%A9%B8%B0&quot;&gt;秘密鍵&lt;/a&gt;ファイルを input plugin を起動するFluentdのホストに安全な方法でコピーし、またプライベートCAの証明書ファイルを output plugin を起動するFluentdのホストにもコピーする必要があります。&lt;/p&gt;&lt;p&gt;この場合 in_secure_forward v0.3.0 は&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B5%A1%BC%A5%D0%BE%DA%CC%C0%BD%F1&quot;&gt;サーバ証明書&lt;/a&gt;を自動生成し、このプライベートCAの証明書および&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C8%EB%CC%A9%B8%B0&quot;&gt;秘密鍵&lt;/a&gt;(とその&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D1%A5%B9%A5%D5%A5%EC%A1%BC%A5%BA&quot;&gt;パスフレーズ&lt;/a&gt;)を用いて&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%B5%A1%BC%A5%D0%BE%DA%CC%C0%BD%F1&quot;&gt;サーバ証明書&lt;/a&gt;に署名します。&lt;br /&gt;
+また out_secure_forward v0.3.0 はこのプライベートCAによる署名が行われていることをもって証明書検証を行い、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/SSL&quot;&gt;SSL&lt;/a&gt;通信を有効なものだと判断します。このためプライベートCAの&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C8%EB%CC%A9%B8%B0&quot;&gt;秘密鍵&lt;/a&gt;および&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D1%A5%B9%A5%D5%A5%EC%A1%BC%A5%BA&quot;&gt;パスフレーズ&lt;/a&gt;が外部に漏れた場合は即座に使用中の証明書と&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%C8%EB%CC%A9%B8%B0&quot;&gt;秘密鍵&lt;/a&gt;を破棄し、新しいものを生成して入れ替えてください。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/tagomoris/fluent-plugin-secure-forward#using-private-ca-file-and-key&quot;&gt;https://github.com/tagomoris/fluent-plugin-secure-forward#using-private-ca-file-and-key&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;セキュアでない方法で通信する&lt;/h4&gt;
+    &lt;p&gt;証明書などの設定をいっさい追加しない場合、安全な&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/SSL&quot;&gt;SSL&lt;/a&gt;通信路を確立できません。この場合第三者によりデータの読み取りや改竄が行われる可能性があります。&lt;br /&gt;
+v0.3.0 およびそれ以降のバージョンでも v0.2.x およびそれ以前と同じ方法で通信を行う方法は存在していますが、使うべきではありません。この方法を有効にする場合は secure false という指定を設定に追加する必要があります。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/tagomoris/fluent-plugin-secure-forward#using-insecure-self-signed-certificates&quot;&gt;https://github.com/tagomoris/fluent-plugin-secure-forward#using-insecure-self-signed-certificates&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h3&gt;まとめ&lt;/h3&gt;
+    &lt;p&gt;fluent-plugin-secure-forward を使っている人は可能な限り迅速に v0.3 にアップデートしてください。設定の変更等が必要です。バグなどについては tagomoris までご連絡ください。よろしくお願いします。&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-91c4e78f&quot; name=&quot;f-91c4e78f&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;が、この場合に output plugin 側で適切な&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%EB%A1%BC%A5%C8%BE%DA%CC%C0%BD%F1&quot;&gt;ルート証明書&lt;/a&gt;のセットを指定する方法を作り忘れていたことに気付きました。あとで再度アップデートします。&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Thu, 28 May 2015 18:22:45 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450095752373</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+      
+      
+        <item>
+          <title>小中規模のIT系企業における技術的選択と雇用戦略に関する雑感</title>
+          <link>http://tagomoris.hatenablog.com/entry/2015/05/11/114841</link>          <description>&lt;p&gt;でっかい主語で入ったが、要するに2月にあちこち会社巡りをしたときに感じたことについてつらつら書こう、というのが目的。&lt;/p&gt;&lt;p&gt;特定の会社について書いてもしょうがないので、あれこれ&lt;a href=&quot;#f-1af26897&quot; name=&quot;fn-1af26897&quot; title=&quot;だいたい40社前後&quot;&gt;*1&lt;/a&gt;回ったうちから少なくとも2〜3ケースで該当するなあ、と思ったことについて書く。特定の1社のみに該当する事項はこのエントリにはひとつも出てきません。&lt;br /&gt;
+またエントリの主旨からして超上から目線になりますが、どうかご容赦ください。&lt;/p&gt;
+
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;これから成長が本格化するのでインフラを支えられる人材がほしい&lt;/h4&gt;
+    &lt;p&gt;正直に言ってこれが一番多かったパターン。スタートアップ的にサービスを作ってきたがその一方でデプロイや監視などの運用まわりが後手後手になっており、そのあたりを支えられる人物がほしい。&lt;/p&gt;&lt;p&gt;話としてはわかるのだが、気になったのは、これを聞くとき、詳しい内容を突っ込んでみると、どうも実際にはそう困ってはいない、というケースがほとんどだったように思えたことだ。単に人数が足りないとか優先順位が低いとかで後回しになっており、しかもそれがその時点では特段大きな問題になっていない。そのあたりについて質問してみても技術的なポイントが出てくるわけではない。&lt;/p&gt;&lt;p&gt;だったら問題になるまで放置しておけば? というのはまあ乱暴なんだけど、そうおかしくもない話だと思う。運用を先回りしてやれるのは、サービスが安定して相応の会社規模があるところだけに許される特権だと思っている。&lt;br /&gt;
+会社／サービスが成長曲線の途中にあるなら、技術的問題が明確に指摘できないようなことにこだわるべきではない。サービスのことだけ考えよう。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;これから成長が本格化するのでデータ分析基盤を作れる人材がほしい&lt;/h4&gt;
+    &lt;p&gt;これも多かった。これはもう&lt;a href=&quot;http://tsuchinoko.dmmlabs.com/?p=1770&quot;&gt;&amp;#x3053;&amp;#x3061;&amp;#x3089;&lt;/a&gt;に書く機会があったので書いてしまったが、自分で作ってはいけない。使いましょう。&lt;/p&gt;&lt;p&gt;データ分析基盤を作ることそのものがサービスの根幹である場合を除いて&lt;a href=&quot;#f-b3b28008&quot; name=&quot;fn-b3b28008&quot; title=&quot;なおそのようなケースは話した中にはTreasure Dataしかありませんでした&quot;&gt;*2&lt;/a&gt;、データ分析基盤がサービスにかかわってくるとき、焦点となるのはデータそのものか、ロジカルな分析手法にあるのであって、基盤そのものが競争力の源泉となるケースはほとんど存在しないはず。そして「これから成長が本格化する」という段階であれば、競争力の中核でないようなことに無駄な力を割くべきではない。&lt;/p&gt;&lt;p&gt;もうちょっと言うと、&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Hadoop&quot;&gt;Hadoop&lt;/a&gt;やら何やらの環境は、作れば作れる。そこまではそう難しくない。しかし運用するのは非常に面倒で、基盤を作ってから2年も経つとあれこれ綻びが出始める。&lt;br /&gt;
+新しい機能が欲しくてアップデートしたくなるが、分散処理ソフトウェア基盤のアップグレードというのは非常に面倒な仕事だ&lt;a href=&quot;#f-e0f75837&quot; name=&quot;fn-e0f75837&quot; title=&quot;最近はCloudera ManagerやApache Ambariのおかげで多少は楽になっているかもしれないが。&quot;&gt;*3&lt;/a&gt;。特に業務がデータ分析に多大に依存しており、処理を止められないケースで困難が増大する。&lt;/p&gt;&lt;p&gt;反面、ざっと業界を見渡して、データの分散処理基盤をトータルに設計・構築・運用できる人の数はきわめて少ない。安定的に採用するのは不可能と言ってもよいくらいに少ない。&lt;br /&gt;
+外部サービスの採用がコスト的に見合わないようなごく一部の大企業などでない限り、まずサービスの利用を最優先に考えるべきだ。作ってはいけない。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;100%&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%BC%AB%B8%CA%BB%F1%CB%DC&quot;&gt;自己資本&lt;/a&gt;で経営しておりVCにわずらわされず仕事できる&lt;/h4&gt;
+    &lt;p&gt;経営の人がこれを言うとき、すごく得意そうに言われるのだが、自分には正直どうでもよい。誰の言うことが元になっていようが、経営方針は経営方針である。特に変わりはない。&lt;/p&gt;&lt;p&gt;というより、拡大志向は無いのかな、ということが気になる。がつんとサービスを大きくする、と言う一方で&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%BC%AB%B8%CA%BB%F1%CB%DC&quot;&gt;自己資本&lt;/a&gt;にこだわる旨のお話をされると、どっち、という感じ。あまり&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%A5%D9%A5%F3%A5%C1%A5%E3%A1%BC&quot;&gt;ベンチャー&lt;/a&gt;的ノリを感じなくなるのは確かだと思う。新卒を雇って20年働いてもらうためにはいいのかもしれない。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;高度な技術で日本の広告&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/%BB%F6%B6%C8&quot;&gt;事業&lt;/a&gt;を支配する&lt;/h4&gt;
+    &lt;p&gt;それができたら&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Gunosy&quot;&gt;Gunosy&lt;/a&gt;やSmartNewsが既に日本を支配しているのでは。というか&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Google&quot;&gt;Google&lt;/a&gt;か。&lt;br /&gt;
+いやもちろん個々の主張があるのだろうけど、技術的なアプローチに特殊な点が見えない状況でそのように主張するより、何がどうなっているから確実に勝てる、という差別化を先に済ませたほうがよいように見える。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;あれとこれとそれをやりたいが、できる人がいない&lt;/h4&gt;
+    &lt;p&gt;御社に必要なのは共同経営者CTOか、あるいは何人もの技術顧問ではありませんか?&lt;/p&gt;&lt;p&gt;この点については、もっと技術顧問みたいな働きかたをする人が増えればいいのかなと思うことは多かった。フルタイムで関わるまでは必要なさそうに見えるが、もっと多くの働きかたや技術的視点を(おそらくはパートタイムで)必要としているように見える、という会社はたぶん思っていたより多い。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;まとめ&lt;/h4&gt;
+    &lt;p&gt;最後だいぶ雑になったが、だいたいこんな感じ。こういった状況を俯瞰している人ってどこかにいるのかなあ。いるんだろうな。&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;section&quot;&gt;
+    &lt;h4&gt;(追記) 技術の話をしよう&lt;/h4&gt;
+    &lt;p&gt;大事なことを書くのを忘れていた。&lt;/p&gt;&lt;p&gt;中途で技術者を採用しようというとき、たぶん一番良いのは、技術の話をすることだと思う。何が技術的な差別化ポイントであり、本質的な技術的困難は何であり、今もっとも深刻な技術的課題は何か。&lt;br /&gt;
+自分は技術的なチャレンジのあるところで働きたいし、おそらくカンファレンスなどの空気を見ていても、技術的なチャレンジのあるところに人の興味は引きつけられる。&lt;/p&gt;&lt;p&gt;だから、技術的困難な点として何があるか、という話をしよう。自分もそのような話がしたい。&lt;/p&gt;
+
+&lt;/div&gt;&lt;div class=&quot;footnote&quot;&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-1af26897&quot; name=&quot;f-1af26897&quot; class=&quot;footnote-number&quot;&gt;*1&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;だいたい40社前後&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-b3b28008&quot; name=&quot;f-b3b28008&quot; class=&quot;footnote-number&quot;&gt;*2&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;なおそのようなケースは話した中にはTreasure Dataしかありませんでした&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;footnote&quot;&gt;&lt;a href=&quot;#fn-e0f75837&quot; name=&quot;f-e0f75837&quot; class=&quot;footnote-number&quot;&gt;*3&lt;/a&gt;&lt;span class=&quot;footnote-delimiter&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;footnote-text&quot;&gt;最近はCloudera Managerや&lt;a class=&quot;keyword&quot; href=&quot;http://d.hatena.ne.jp/keyword/Apache&quot;&gt;Apache&lt;/a&gt; Ambariのおかげで多少は楽になっているかもしれないが。&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</description>          <pubDate>Mon, 11 May 2015 11:48:41 +0900</pubDate>
+          <guid isPermalink="false">hatenablog://entry/8454420450094112484</guid>
+          
+          <enclosure url="https://cdn.blog.st-hatena.com/images/theme/og-image-1500.png" type="image/png" length="0" />
+        </item>
+      
+    
+  </channel>
+</rss>

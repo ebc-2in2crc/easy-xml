@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cars>
+	<car>
+		<name>乗用車</name>
+		<price>150</price>
+		<color>白</color>
+	</car>
+	<car>
+		<name>トラック</name>
+		<price>500</price>
+		<color>紺</color>
+	</car>
+	<car>
+		<name>オープンカー</name>
+		<price>200</price>
+		<color>黄</color>
+	</car>
+</cars>
