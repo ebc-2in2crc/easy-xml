@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cars>
+	<car>
+		<name>乗用車</name>
+		<price>150</price>
+	</car>
+</cars>
