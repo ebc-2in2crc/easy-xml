@@ -1,0 +1,21 @@
+cars {
+	display: block;
+	width: 230pt;
+	height: 220pt;
+	background-color: rgb(200, 200, 200);
+	padding: 18pt;
+	font-weight: bold;
+	font-size; 18pt;
+	text-align: left;
+}
+
+car {
+	display: block;
+	width: 180;
+	height: 30;
+	background-color: rgb(255, 0, 0);
+	padding: 18pt;
+	font-weight: normal;
+	font-size; 12pt;
+	text-align: center;
+}
